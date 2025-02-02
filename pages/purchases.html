@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--flaticon-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
+      rel="stylesheet"
+    />
+    <!--google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dashboard,notifications,search,add,arrow_forward_ios"
+    />
+    <script src="httos;//code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/CSS/purchases.css" />
+    <title>Purchase</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <header class="sidebar-header">
+            <div class="welcome-block">
+              <div class="sidebar-logo">
+                <img src="/images/logo.png" alt="logo" />
+              </div>
+              <div class="sidebar-name">
+                <h1>Opti-Stock</h1>
+              </div>
+            </div>
+            <div class="sidebar-nav">
+              <nav class="welcome-nav" id="navigation">
+                <ul>
+                  <li>
+                    <a class="tag active" href="/pages/purchases.html">
+                      <img src="/images/dashboard.png" alt="" /> Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/cart.png" alt="" /> Product
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/catergory.png" alt="" /> Catergory
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/order.png" alt="" /> Order
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/purchase.png" alt="" /> Purchase
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/transfer.png" alt="" /> Transfer
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/report.png" alt="" /> Report
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/person.png" alt="" /> Suppliers
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/people.png" alt="" /> Users
+                    </a>
+                  </li>
+                  <li>
+                    <a class="tag" href="#">
+                      <img src="/images/setting.png" alt="" /> Settings
+                    </a>
+                  </li>
+                </ul>
+        
+            </div>
+               <div class="sidebar-nav">
+              <nav class="welcome-nav-1">
+                <ul>
+                    <li>
+                    <a href="#">
+                      <img id="logout" src="/images/out.png" alt="" /> Logout
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+           </div>
+          </header>
+        </div>
+      </aside>
+    </div>
+    <section class="main-content">
+        <div class="top-nav">
+               <div class="sec-name">
+                <h1>Purchases</h1>
+               </div>
+              <div class="inputfield">
+                 
+                <input type="search" id="search"  name="search" placeholder="Search  " >
+                <span class="material-symbols-outlined">
+              search
+              </span>
+               
+              </div>
+              
+              <div class="user">
+                 <div class="notify">
+                <a href="#">
+                  <span class="material-symbols-outlined">
+                  notifications
+                </span>
+                </a>
+              </div>
+                <div class="mainuser">
+                  <img src="/images/man.jpeg" alt="">
+                </div>
+                <div class="userdetail">
+                  <h5>Francis Oko</h5>
+                  <p>Manager</p>
+
+                </div>
+              </div>
+          </div>
+    </section>
+    <section class="maincontent">
+  <div class="mainintro">
+        <div class="intro">
+        <h3>Purchases</h3>
+      </div>
+      <div class="intro1">
+        <img src="/images/calender.png" alt="">
+        <h3>5 Jan - 11 Jan</h3>
+        <form action="/action_page.php">
+  <label for="week">Week</label>
+  <select name="weeks" id="week">
+     <option value="week"></option>
+    <option value="week">1</option>
+    <option value="week">2</option>
+    <option value="week">3</option>
+    <option value="week">4</option>
+  </select>
+  
+</form>
+   </div>
+  </div>
+    </section>
+    <section class="filter">
+      <div class="mainfilter">
+          <div class="inputfield3">
+                 
+                <input type="search" id="search"  name="search" placeholder="Search  " >
+                <span class="material-symbols-outlined">
+              search
+              </span>
+               
+              </div>
+            <div class="join">
+                  <div class="inputfield1">
+                 <span class="system-uicons--filtering"></span>
+                <input type="search" id="filter"  name="filter" placeholder="filter  ">
+                
+               
+              </div>
+               <div class="inputfield2">
+                <span class="material-symbols-light--add-rounded"></span>
+                <input type="search" id="create"  name="filter" placeholder="Create Puchase  " >
+                
+               
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="mainpurchase-table">
+      <div class="maintable">
+        <table>
+  <tr>
+    <th><input type="checkbox" id="checkbox" name="checkbox"></th>
+    <th>Product</th>
+    <th>Date</th>
+    <th>Supplier</th>
+    <th>Warehouse</th>
+    <th>Status</th>
+    <th>Grand Total</th>
+    <th>Payment</th>
+    <th>Action</th>
+  </tr>
+    <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/table.jpeg" alt=""> Rounded Table</td>
+   
+    <td>05-01-2024</td>
+    <td>LK Traders</td>
+    <td>Warehouse 01</td>
+    <td><button id="Recieved"> Recieved</button></td>
+    <td>NG515,000</td>
+    <td><button id="paid">Paid</button></td>
+     <td><span class="mdi--delete-outline"></span></td>
+    
+  </tr>
+       <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/sofa.jpeg" alt="">Nova Creamy Sofa</td>
+   
+    <td>05-01-2024</td>
+    <td>Vepha Group</td>
+    <td>Warehouse 01</td>
+    <td><button id="ordered">Ordered</button></td>
+    <td>NG180,000</td>
+    <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/bed.jpeg" alt="">Bed Frame</td>
+    <td>07-01-2024</td>
+    <td>Sunshine Ltd</td>
+    <td>Warehouse 1</td>
+    <td><button id="ordered">Ordered</button></td>
+    <td>NG425000</td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/chair.jpeg" alt="">Ancient Chair</td>
+    <td>07-01-2024</td>
+    <td>Dev Factory</td>
+    <td>Warehouse 01</td>
+    <td><button id="pending">Pending</button></td>
+    <td>NG1,200,000</td>
+    <td><button id="partial">Partial</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/seat.jpeg" alt="">Pashe Dinning Chair</td>
+    <td>07-01-2024</td>
+    <td>Crossline Ltd</td>
+    <td>Warehouse 02</td>
+    <td><button id="Recieved">Recieved</button></td>
+    <td>NG 89000</td>
+    <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/sit.jpeg" alt="">Mordern Arm Chair</td>
+    <td>07-01-2024</td>
+    <td>Sunshine Ltd</td>
+    <td>Warehouse 02</td>
+    <td><button id="pending">Pending</button></td>
+    <td>NG1,100,000</td>
+    <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/long chair.jpeg" alt="">Cushion Chair</td>
+    <td>09-01-2024</td>
+    <td>Vephla Group</td>
+     <td>Warehouse 02</td>
+    <td><button id="Recieved">Recieved</button></td>
+   
+    <td>NG1,000,000</td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/stool.jpeg" alt="">Surllivian Ancient Table</td>
+    <td>09-01-2024</td>
+    <td>Dev Factory</td>
+    <td>warehouse 03</td>
+    <td><button id="Recieved">Recieved</button></td>
+    <td>NG66000</td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+        <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/stickchair.jpeg" alt="">Leather Dinning Chair</td>
+    <td>11-01-2024</td>
+    <td>CK Group</td>
+    <td>Warehouse 03</td>
+    <td><button id="pending">Pending</button></td>
+    <td>NG90000</td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+          <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td><img src="/images/sidestool.jpeg" alt="">Square Oak Coffe Table</td>
+    <td>11-01-2024</td>
+    <td>Crossline ltd</td>
+    <td>Warehouse 03</td>
+    <td><button id="Recieved">Pending</button></td>
+    <td>NG285000</td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+</table>
+      </div>
+    </section>
+     <section class="filter">
+      <div class="mainfilter1">
+        <div class="foot">
+          <h5>Showing 10 entities</h5>
+        </div>
+        <div class="last">
+          <a  class="active " href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#"><span class="dashicons--arrow-right-alt2"></span></a>
+        </div>
+      </div>
+     </section>
+     <script src="main.js"></script>
+  </body>
+</html>
