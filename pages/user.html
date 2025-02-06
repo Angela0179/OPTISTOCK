@@ -19,7 +19,7 @@
     />
     <script src="httos;//code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="/CSS/purchases.css" />
-    <title>Purchase</title>
+    <title>Users</title>
   </head>
   <body>
     <div class="container">
@@ -53,12 +53,12 @@
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/pages/order.html">
-                      <img src="/images/order.png" alt="" /> Order
+                    <a class="tag " href="/pages/order.html">
+                      <img class="active" src="/images/order.png" alt="" /> Order
                     </a>
                   </li>
                   <li>
-                    <a class="tag active" href="/pages/purchase.html">
+                    <a class="tag" href="/pages/purchase.html">
                       <img src="/images/purchase.png" alt="" /> Purchase
                     </a>
                   </li>
@@ -73,12 +73,12 @@
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/pages/supplier.html">
+                    <a class="tag " href="/pages/supplier.html">
                       <img src="/images/person.png" alt="" /> Suppliers
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/pages/user.html">
+                    <a class="tag active" href="/pages/user.html">
                       <img src="/images/people.png" alt="" /> Users
                     </a>
                   </li>
@@ -108,7 +108,7 @@
     <section class="main-content">
         <div class="top-nav">
                <div class="sec-name">
-                <h1>Purchases</h1>
+                <h1>Users</h1>
                </div>
               <div class="inputfield">
                  
@@ -141,23 +141,11 @@
     <section class="maincontent">
   <div class="mainintro">
         <div class="intro">
-        <h3>Purchases</h3>
+        <h3>All Users </h3>
       </div>
       <div class="intro1">
-        <img src="/images/calender.png" alt="">
-        <h3>5 Jan - 11 Jan</h3>
-        <form action="/action_page.php">
-  <label for="week">Week</label>
-  <select name="weeks" id="week">
-     <option value="week"></option>
-    <option value="week">1</option>
-    <option value="week">2</option>
-    <option value="week">3</option>
-    <option value="week">4</option>
-    <option value="week">4</option>
-  </select>
-  
-</form>
+        <h3>Dashboard ></h3>
+        <h3><b>Users</b></h3>
    </div>
   </div>
     </section>
@@ -180,7 +168,7 @@
               </div>
                <div class="inputfield2">
                 <span class="material-symbols-light--add-rounded"></span>
-                <input type="search" id="create"  name="filter" placeholder="Create Puchase  " >
+                <input type="search" id="create"  name="filter" placeholder="Add Supplier  " >
                 
                
               </div>
@@ -188,149 +176,83 @@
       </div>
     </section>
     <section class="mainpurchase-table">
-      <div class="maintable">
-        <table>
+      <div class="maintable"  id="maintb">
+        <table >
   <tr>
     <th><input type="checkbox" id="checkbox" name="checkbox"></th>
-    <th>Product</th>
-    <th>Date</th>
-    <th>Supplier</th>
-    <th>Warehouse</th>
-    <th>Status</th>
-    <th>Grand Total</th>
-    <th>Payment</th>
+    <th>Username</th>
+    <th>User ID</th>
+    <th>Position</th>
+    <th>Contact</th>
+   <th>Status</th>
     <th>Action</th>
   </tr>
     <tr>
     <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/table.jpeg" alt=""> Rounded Table</td>
-   
-    <td>05-01-2024</td>
-    <td>LK Traders</td>
-    <td>Warehouse 01</td>
-    <td><button id="Recieved"> Recieved</button></td>
-    <td>NG515,000</td>
-    <td><button id="paid">Paid</button></td>
-     <td><span class="mdi--delete-outline"></span></td>
+    <td>Francis O</td>
+    <td>#User001</td>
+    <td>Manager</td>
+    <td>08156747654</td>
+   <td><button id="paid">Acive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>
     
   </tr>
        <tr>
     <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/sofa.jpeg" alt="">Nova Creamy Sofa</td>
-   
-    <td>05-01-2024</td>
-    <td>Vepha Group</td>
-    <td>Warehouse 01</td>
-    <td><button id="ordered">Ordered</button></td>
-    <td>NG180,000</td>
-    <td><button id="due">Due</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/bed.jpeg" alt="">Bed Frame</td>
-    <td>07-01-2024</td>
-    <td>Sunshine Ltd</td>
-    <td>Warehouse 1</td>
-    <td><button id="ordered">Ordered</button></td>
-    <td>NG425000</td>
-    <td><button id="paid">Paid</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/chair.jpeg" alt="">Ancient Chair</td>
-    <td>07-01-2024</td>
-    <td>Dev Factory</td>
-    <td>Warehouse 01</td>
-    <td><button id="pending">Pending</button></td>
-    <td>NG1,200,000</td>
-    <td><button id="partial">Partial</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/seat.jpeg" alt="">Pashe Dinning Chair</td>
-    <td>07-01-2024</td>
-    <td>Crossline Ltd</td>
-    <td>Warehouse 02</td>
-    <td><button id="Recieved">Recieved</button></td>
-    <td>NG 89000</td>
-    <td><button id="due">Due</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/sit.jpeg" alt="">Mordern Arm Chair</td>
-    <td>07-01-2024</td>
-    <td>Sunshine Ltd</td>
-    <td>Warehouse 02</td>
-    <td><button id="pending">Pending</button></td>
-    <td>NG1,100,000</td>
-    <td><button id="due">Due</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/long chair.jpeg" alt="">Cushion Chair</td>
-    <td>09-01-2024</td>
-    <td>Vephla Group</td>
-     <td>Warehouse 02</td>
-    <td><button id="Recieved">Recieved</button></td>
-   
-    <td>NG1,000,000</td>
-    <td><button id="paid">Paid</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
-  </tr>
-      <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/stool.jpeg" alt="">Surllivian Ancient Table</td>
-    <td>09-01-2024</td>
-    <td>Dev Factory</td>
-    <td>warehouse 03</td>
-    <td><button id="Recieved">Recieved</button></td>
-    <td>NG66000</td>
-    <td><button id="paid">Paid</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
+    <td>Chibuieze W</td>
+    <td>#User002</td>
+    <td>System Admin</td>
+    <td>07023476584</td>
+   <td><button id="paid">Acive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>
+    
   </tr>
         <tr>
     <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/stickchair.jpeg" alt="">Leather Dinning Chair</td>
-    <td>11-01-2024</td>
-    <td>CK Group</td>
-    <td>Warehouse 03</td>
-    <td><button id="pending">Pending</button></td>
-    <td>NG90000</td>
-    <td><button id="paid">Paid</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
+    <td>Collins O</td>
+    <td>#User003</td>
+    <td>Stock Manager</td>
+    <td>+4487639645</td>
+     <td><button id="due">Inactive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>
+    
+  </tr>
+  </tr>
+        <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td>Grace K</td>
+    <td>#User004</td>
+    <td>Stock Manager</td>
+    <td>++34983652398</td>
+    <td><button id="paid">Acive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>
+    
+  </tr>
+    
+        <tr>
+    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+    <td>Emmanuel K</td>
+    <td>#User 005</td>
+    <td>Stock Manager</td>
+    <td>+4487639645</td>
+   <td><button id="paid">Acive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>  
   </tr>
           <tr>
     <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td><img src="/images/sidestool.jpeg" alt="">Square Oak Coffe Table</td>
-    <td>11-01-2024</td>
-    <td>Crossline ltd</td>
-    <td>Warehouse 03</td>
-    <td><button id="Recieved">Pending</button></td>
-    <td>NG285000</td>
-    <td><button id="paid">Paid</button></td>
-    <td><span class="mdi--delete-outline"></span></td>
+    <td>Taofeeq A</td>
+    <td>#User006</td>
+    <td>Biller</td>
+    <td>+39092345609</td>
+      <td><button id="due">Inactive</button></td>
+   <td><span class="mdi--delete-outline"></span></td>
+    
   </tr>
+  
 </table>
       </div>
     </section>
-     <section class="filter">
-      <div class="mainfilter1">
-        <div class="foot">
-          <h5>Showing 10 entities</h5>
-        </div>
-        <div class="last">
-          <a  class="active " href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#"><span class="dashicons--arrow-right-alt2"></span></a>
-        </div>
-      </div>
-     </section>
+ 
      <script src="main.js"></script>
   </body>
 </html>

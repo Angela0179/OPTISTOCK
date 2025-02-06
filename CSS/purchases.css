@@ -22,6 +22,7 @@
   --partial-color: #efedff;
   --due-color: #ffebe7;
   --due: #f24822;
+  --bg-pending: #fef3dc;
 }
 html {
   font-size: 60%;
@@ -78,7 +79,7 @@ aside {
   max-width: 20.563rem;
   min-width: 19rem;
   z-index: 1;
-  padding: 1.5rem;
+  padding: 1rem;
 
   float: right;
 }
@@ -131,6 +132,7 @@ aside {
   margin-left: 0.1rem;
 }
 .sidebar-nav a {
+  display: flex;
   color: var(--text-color2);
   font-family: "Montserrat", serif;
   font-family: Montserrat;
@@ -140,9 +142,8 @@ aside {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  width: Fixed (173px) px;
-  height: Fixed (38px) px;
-  padding: 12px 20px 2px 15px;
+  align-items: center;
+  padding: 6px 30px 4px 15px;
   border-radius: 6px;
 }
 .sidebar-nav li {
@@ -151,7 +152,7 @@ aside {
   height: Fixed (38px) px;
   padding: 6px 12px 6px 12px;
   gap: 5px;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 10px;
   opacity: 0px;
 }
 .sidebar-nav span {
@@ -183,12 +184,7 @@ aside {
 
   transform: rotate(-178.66deg);
 }
-.welcome-nav a :hover {
-  color: var(--txt-color);
 
-  background-color: var(--ordered-color);
-  opacity: 1;
-}
 .welcome-nav li :hover {
   color: var(--txt-color);
   background-color: var(--ordered-color);
@@ -325,6 +321,8 @@ label {
   width: Fixed (1, 107px) px;
   height: Hug (30px) px;
   background-color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .system-uicons--filtering {
   display: inline-block;
@@ -418,6 +416,7 @@ label {
   mask-size: 100% 100%;
   color: var(--txt-color);
 }
+/*new*/
 .maintable {
   display: flex;
   justify-content: space-between;
@@ -430,6 +429,8 @@ label {
   width: Fixed (1, 107px) px;
   height: auto;
   background-color: white;
+  /* border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px; */
 }
 table img {
   width: 30px;
@@ -520,6 +521,18 @@ table td #due {
   color: var(--due);
   border-radius: 5px;
 }
+table td #pend {
+  width: Hug (98px) px;
+  height: Hug (45px) px;
+
+  padding: 8px;
+  gap: 10px;
+
+  border: none;
+  background-color: var(--bg-pending);
+  color: var(--pending);
+  border-radius: 5px;
+}
 table td #partial {
   width: Hug (98px) px;
   height: Hug (45px) px;
@@ -545,6 +558,19 @@ table td #partial {
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+.ep--arrow-left {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23000' d='M609.408 149.376L277.76 489.6a32 32 0 0 0 0 44.672l331.648 340.352a29.12 29.12 0 0 0 41.728 0a30.59 30.59 0 0 0 0-42.752L339.264 511.936l311.872-319.872a30.59 30.59 0 0 0 0-42.688a29.12 29.12 0 0 0-41.728 0'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
 .mainfilter1 {
   display: flex;
   justify-content: space-between;
@@ -558,8 +584,18 @@ table td #partial {
   height: 7vh;
   background-color: white;
   margin-bottom: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 .last a {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
   padding: 5px 8px 5px 8px;
   width: 24px;
   height: 8px;
@@ -579,9 +615,20 @@ table td #partial {
   opacity: 1;
 }
 .foot h5 {
-  font-weight: 400;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
   color: #9f9999;
 }
+#maintb {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 3rem;
@@ -783,6 +830,16 @@ table td #partial {
     background-color: white;
     margin-bottom: 20px;
   }
+  .foot h5 {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #9f9999;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -964,9 +1021,19 @@ table td #partial {
     margin-left: 21rem;
     margin-right: 2rem;
     width: Fixed (1, 107px) px;
-    height: 4vh;
+    height: 6vh;
     background-color: white;
     margin-bottom: 20px;
+  }
+  .foot h5 {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #9f9999;
   }
 }
 
