@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opti-Stock Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@155&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">        
+            
+            <nav class="sidebar-nav">
+                <img src="./imgs/logo-img.png" alt="logo-img.png">
+                <ul>
+                    <li><a href="index.html"><img src="./imgs/Dashboard Layout.png">Dashboard</a></li>
+                    <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png">Products</a></li>
+                    <li><a href="category.html"> <img src="./imgs/Categorize.png" alt="Categorize.png"> Categories</a></li>
+                    <li><a href="#"><img src="./imgs/Purchase Order.png" alt="Purchase Order.png"> Orders</a></li>
+                    <li><a href="#"><img src="./imgs/Bill.png" alt="">Purchases</a></li>
+                    <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png" alt="">Transfer</a></li>
+                    <li><a href="reports.html"><img src="./imgs/Graph Report.png" alt="">Reports</a></li>
+                    <li><a href="#"><img src="./imgs/Supplier.png" alt="">Supplies</a></li>
+                    <li><a href="#"><img src="./imgs/Users.png" alt="">Users</a></li>
+                    <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                
+                <hr>
+                <li><a href="#"><img src="./imgs/Logout.png">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header"> 
+            <div class="dashboard">
+                <h2>Products</h2>
+            </div>
+            <div class="div-input">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="div-francis">
+                <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
+            </div>
+        </div>
+
+        <main>
+            <div class="heading-text">
+                <h3>All Products</h3>
+                <p>Dashboard > <span>Products</span></p>
+            </div>
+            <section id="products">
+                <div class="input-table-text">
+                    <div class="search">
+                        <input type="text" placeholder="search" id="input-2">
+                    </div>
+                    <div class="filter">
+                        <button class="filter-btn1"><img src="./imgs/mage_filter.png" alt="filter-icon">Filter</button>
+                        <button class="filter-btn2">+ Add New</button>
+                    </div>
+                </div>
+
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"> </th>
+                            <th colspan="2">Product</th>
+                            <th>Product ID</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2" class="table-imgs"><img src="./imgs/side-table.png" alt="side-table.png">Round Table</td>
+                            <td>#398302</td>
+                            <td>NGN45,000</td>
+                            <td>Table</td>
+                            <td>41</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/nova creamy sofa 1.png" alt="nova creamy sofa ">Nova Creamy Sofa</td>
+                            <td>#129542</td>
+                            <td>NGN80,000</td>
+                            <td>sofa</td>
+                            <td>23</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png">Bed Frame</td>
+                            <td>#805282</td>
+                            <td>NGN100,000</td>
+                            <td>Bed</td>
+                            <td>102</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/accent-chair.png" alt="accent-chair.png">Accent Chair</td>
+                            <td>#427223</td>
+                            <td>NGN80,000</td>
+                            <td>Chair</td>
+                            <td>56</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/color-chair.png" alt="dinning-chair.png">Pashe Dinning Chair</td>
+                            <td>#638732</td>
+                            <td>NGN35,000</td>
+                            <td>Chair</td>
+                            <td>76</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/arm-chair.png" alt="arm-chair.png">Modern Arm Chair</td>
+                            <td>#934823</td>
+                            <td>NGN74,000</td>
+                            <td>Table</td>
+                            <td>56</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/exe.chair.png" alt="accent-chair.png">Accent Chair</td>
+                            <td>#756252</td>
+                            <td>NGN90,000</td>
+                            <td>Chair</td>
+                            <td>8</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/sullivan-table.png" alt="accent-table.png">Sullivan Accent Table</td>
+                            <td>#700634</td>
+                            <td>NGN26,000</td>
+                            <td>Table</td>
+                            <td>80</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/black-w-chair.png" alt="accent-chair.png">Leather Dinning Chair</td>
+                            <td>#504822</td>
+                            <td>NGN25,000</td>
+                            <td>Chair</td>
+                            <td>100</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td colspan="2"><img src="./imgs/coffee-table.png" alt="coffee-table.png">Square Oak Coffee Table</td>
+                            <td>#490254</td>
+                            <td>NGN25,000</td>
+                            <td>Table</td>
+                            <td>92</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

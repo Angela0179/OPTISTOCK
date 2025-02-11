@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opti-Stock/transfer</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@155&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">        
+            
+            <nav class="sidebar-nav">
+                <img src="./imgs/logo-img.png" alt="logo-img.png">
+                <ul>
+                    <li><a href="index.html"><img src="./imgs/Dashboard Layout.png">Dashboard</a></li>
+                    <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png">Products</a></li>
+                    <li><a href="category.html"> <img src="./imgs/Categorize.png" alt="Categorize.png"> Categories</a></li>
+                    <li><a href="#"><img src="./imgs/Purchase Order.png" alt="Purchase Order.png"> Orders</a></li>
+                    <li><a href="#"><img src="./imgs/Bill.png" alt="Bill.png">Purchases</a></li>
+                    <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png" alt="Fast Shipping">Transfer</a></li>
+                    <li><a href="reports.html"><img src="./imgs/Graph Report.png" alt="Graph Report">Reports</a></li>
+                    <li><a href="#"><img src="./imgs/Supplier.png" alt="Supplier.png">Supplies</a></li>
+                    <li><a href="#"><img src="./imgs/Users.png" alt="Users.png">Users</a></li>
+                    <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                
+                <hr>
+                <li><a href="#"><img src="./imgs/Logout.png">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header"> 
+            <div class="dashboard">
+                <h2>Transfers</h2>
+            </div>
+            <div class="div-input">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="div-francis">
+                <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
+            </div>
+        </div>
+
+        <main>
+            <div class="heading-text">
+                <h3>Transfer</h3>
+                <p>Dashboard > <span>Transfers</span></p>
+            </div>
+            <section>
+                <div class="input-table-text">
+                    <div class="search">
+                        <input type="text" placeholder="search" id="input-2">
+                    </div>
+                    <div class="filter">
+                        <button class="filter-btn1"><img src="./imgs/mage_filter.png" alt="filter-icon">Filter</button>
+                        <button class="transfer-btn2">+ Create Transfer</button>
+                    </div>
+                </div>
+                <table class="transfer-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2"><input type="checkbox" id="category-check">Product</th>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td colspan="2" class="table-imgs"> <input type="checkbox"> <img src="./imgs/side-table.png" alt="side-table.png"> Round Table</td>
+                            <td>05-01-2024</td>
+                            <td>Warehouse 01</td>
+                            <td>Warehouse 03</td>
+                            <td>23</td>
+                            <td class="completed">completed</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/nova creamy sofa 1.png" alt="nova creamy sofa ">Nova Creamy Sofa</td>
+                            <td>05-01-2024</td>
+                            <td>Warehouse 01</td>
+                            <td>Warehouse 02</td>
+                            <td>46</td>
+                            <td class="process">on process</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png">Bed Frame</td>
+                            <td>07-01-2024</td>
+                            <td>Warehouse 01</td>
+                            <td>Warehouse 02</td>
+                            <td>26</td>
+                            <td class="completed">completed</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/accent-chair.png" alt="accent-chair.png">Accent Chair</td>
+                            <td>07-01-2024</td>
+                            <td>Warehouse 01</td>
+                            <td>Warehouse 03</td>
+                            <td>60</td>
+                            <td class="pending">pending</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/color-chair.png" alt="dinning-chair.png">Pashe Dinning Chair</td>
+                            <td>07-01-2024</td>
+                            <td>Warehouse 02</td>
+                            <td>Warehouse 03</td>
+                            <td>57</td>
+                            <td class="completed">completed</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/arm-chair.png" alt="arm-chair.png">Modern Arm Chair</td>
+                            <td>08-01-2024</td>
+                            <td>Warehouse 02</td>
+                            <td>Warehouse 01</td>
+                            <td>45</td>
+                            <td class="process">on process</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/exe.chair.png" alt="accent-chair.png">Cushion Chair</td>
+                            <td>09-01-2024</td>
+                            <td>Warehouse 02</td>
+                            <td>Warehouse 03</td>
+                            <td>90</td>
+                            <td class="pending">pending</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/sullivan-table.png" alt="accent-table.png">Sullivan Accent Table</td>
+                            <td>09-01-2024</td>
+                            <td>Warehouse 03</td>
+                            <td>Warehouse 01</td>
+                            <td>45</td>
+                            <td class="pending">pending</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/black-w-chair.png" alt="accent-chair.png">Leather Dinning Chair</td>
+                            <td>11-01-2024</td>
+                            <td>Warehouse 03</td>
+                            <td>Warehouse 02</td>
+                            <td>31</td>
+                            <td class="completed">completed</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td><input type="checkbox"></td> -->
+                            <td colspan="2"><input type="checkbox"><img src="./imgs/coffee-table.png" alt="coffee-table.png">Square Oak Coffee Table</td>
+                            <td>11-01-2024</td>
+                            <td>Warehouse 03</td>
+                            <td>Warehouse 02</td>
+                            <td>13</td>
+                            <td class="process">on process</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>

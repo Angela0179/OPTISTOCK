@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opti-Stock/category</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@155&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">        
+            
+            <nav class="sidebar-nav">
+                <img src="./imgs/logo-img.png" alt="logo-img.png">
+                <ul>
+                    <li><a href="index.html"><img src="./imgs/Dashboard Layout.png">Dashboard</a></li>
+                    <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png">Products</a></li>
+                    <li><a href="category.html"> <img src="./imgs/Categorize.png" alt="Categorize.png"> Categories</a></li>
+                    <li><a href="#"><img src="./imgs/Purchase Order.png" alt="Purchase Order.png"> Orders</a></li>
+                    <li><a href="#"><img src="./imgs/Bill.png" alt="Bill.png">Purchases</a></li>
+                    <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png" alt="Fast Shipping">Transfer</a></li>
+                    <li><a href="reports.html"><img src="./imgs/Graph Report.png" alt="Graph Report">Reports</a></li>
+                    <li><a href="#"><img src="./imgs/Supplier.png" alt="Supplier.png">Supplies</a></li>
+                    <li><a href="#"><img src="./imgs/Users.png" alt="Users.png">Users</a></li>
+                    <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                
+                <hr>
+                <li><a href="#"><img src="./imgs/Logout.png">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header"> 
+            <div class="dashboard">
+                <h2>Categories</h2>
+            </div>
+            <div class="div-input">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="div-francis">
+                <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
+            </div>
+        </div>
+
+        <main>
+            <div class="heading-text">
+                <h3>All Categories</h3>
+                <p>Dashboard > <span>Categories</span></p>
+            </div>
+            <section>
+                <div class="input-table-text">
+                    <div class="search">
+                        <input type="text" placeholder="search" id="input-2">
+                    </div>
+                    <div class="filter">
+                        <button class="filter-btn1"><img src="./imgs/mage_filter.png" alt="filter-icon">Filter</button>
+                        <button class="filter-btn2">+ Add New</button>
+                    </div>
+                </div>
+                <table class="Category-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="category-check"></th>
+                            <th>Category</th>
+                            <th>Image</th>
+                            <th>Rank</th>
+                            <th>Status</th>
+                            <th>Created on</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Table</td>
+                            <td><img src="./imgs/side-table.png" alt="/side-table.png"></td>
+                            <td>1</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Sofa</td>
+                            <td><img src="./imgs/nova creamy sofa 1.png" alt=""></td>
+                            <td>2</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Bed</td>
+                            <td><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt=""></td>
+                            <td>3</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Chair</td>
+                            <td><img src="./imgs/accent-chair.png" alt="/accent-chair.png"></td>
+                            <td>4</td>
+                            <td class="inactive">Inactive</td>
+                            <td>20 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Chair</td>
+                            <td><img src="./imgs/color-chair.png" alt="color-chair.png"></td>
+                            <td>5</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Table</td>
+                            <td><img src="./imgs/arm-chair.png" alt="arm-chair.png"></td>
+                            <td>6</td>
+                            <td class="inactive">Inactive</td>
+                            <td>20 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Chair</td>
+                            <td><img src="./imgs/exe.chair.png" alt="exe.chair.png"></td>
+                            <td>7</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Table</td>
+                            <td><img src="./imgs/sullivan-table.png" alt="sullivan-table.png"></td>
+                            <td>8</td>
+                            <td class="inactive">Inactive</td>
+                            <td>18 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Chair</td>
+                            <td><img src="./imgs/black-w-chair.png" alt="/black-w-chair.png"></td>
+                            <td>9</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Table</td>
+                            <td><img src="./imgs/coffee-table.png" alt="/coffee-table.png"></td>
+                            <td>10</td>
+                            <td class="active">Active</td>
+                            <td>21 Jan 2024</td>
+                            <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
+                        </tr>
+                        
+                    </tbody>
+
+                </table>
+            </section>
+        </main>
+    </div>
+    
+</body>
+</html>
