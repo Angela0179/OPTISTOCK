@@ -18,8 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dashboard,notifications,search,add,arrow_forward_ios"
     />
     <script src="httos;//code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="/CSS/purchases.css" />
-    <title>Users</title>
+    <link rel="stylesheet" href="/CSS/create_purchase.css">
+    <title>Edit_Category</title>
   </head>
   <body>
     <div class="container">
@@ -38,52 +38,52 @@
               <nav class="welcome-nav" id="navigation">
                 <ul>
                   <li>
-                    <a class="tag " href="/index.html">
+                    <a class="tag " href="/pages/purchases.html">
                       <img src="/images/dashboard.png" alt="" /> Dashboard
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/products.html">
+                    <a class="tag active" href="#">
                       <img src="/images/cart.png" alt="" /> Product
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/category.html">
+                    <a class="tag" href="#">
                       <img src="/images/catergory.png" alt="" /> Catergory
                     </a>
                   </li>
                   <li>
-                    <a class="tag " href="/pages/order.html">
-                      <img class="active" src="/images/order.png" alt="" /> Order
+                    <a class="tag" href="/pages/order.html">
+                      <img src="/images/order.png" alt="" /> Order
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/pages/purchase.html">
+                    <a class="tag " href="/pages/purchase.html">
                       <img src="/images/purchase.png" alt="" /> Purchase
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/transfer.html">
+                    <a class="tag" href="#">
                       <img src="/images/transfer.png" alt="" /> Transfer
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/reports.html">
+                    <a class="tag" href="#">
                       <img src="/images/report.png" alt="" /> Report
                     </a>
                   </li>
                   <li>
-                    <a class="tag " href="/pages/supplier.html">
+                    <a class="tag" href="/pages/supplier.html">
                       <img src="/images/person.png" alt="" /> Suppliers
                     </a>
                   </li>
                   <li>
-                    <a class="tag active" href="/pages/user.html">
+                    <a class="tag" href="/pages/user.html">
                       <img src="/images/people.png" alt="" /> Users
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="/settings.html">
+                    <a class="tag" href="#">
                       <img src="/images/setting.png" alt="" /> Settings
                     </a>
                   </li>
@@ -108,7 +108,7 @@
     <section class="main-content">
         <div class="top-nav">
                <div class="sec-name">
-                <h1>Users</h1>
+                <h1>Edit Catergory</h1>
                </div>
               <div class="inputfield">
                  
@@ -141,118 +141,54 @@
     <section class="maincontent">
   <div class="mainintro">
         <div class="intro">
-        <h3>All Users </h3>
-      </div>
+        <h3>Catergory Details</h3>
+    </div>
       <div class="intro1">
         <h3>Dashboard ></h3>
-        <h3><b>Users</b></h3>
-   </div>
+        <h3>Purchases ></h3>
+        <h3><b>Edit Catergory</b></h3>
   </div>
     </section>
-    <section class="filter">
-      <div class="mainfilter">
-          <div class="inputfield3">
-                 
-                <input type="search" id="search"  name="search" placeholder="Search  " >
-                <span class="material-symbols-outlined">
-              search
-              </span>
-               
-              </div>
-            <div class="join">
-                  <div class="inputfield1">
-                 <span class="system-uicons--filtering"></span>
-                <input type="search" id="filter"  name="filter" placeholder="filter  ">
-                
-               
-              </div>
-               <div class="inputfield2">
-                <span class="material-symbols-light--add-rounded"></span>
-                <input type="search" id="create"  name="filter" placeholder="Add Supplier  " >
-                
-               
-              </div>
+      <section class="mainpurchase-table">
+      <div class="maintable">
+      <div class="catergory_one">
+          <form action="">
+            <div class="input-field">
+              <input type="text" name="" id="" placeholder="" required />
+              <label for=""> Catergory Name</label>
+              
             </div>
+            <div class="input-field">
+              <input type="text" name="" id="" placeholder="" required />
+              <label for="">Catergory Status</label>
+            </div>
+        <div class="image_cont">
+            <img src="/images/long chair.jpeg" alt="">
+            <h1><span class="mdi--delete-outline"></span></h1>
+
+        </div>
+            
+          </form>
       </div>
-    </section>
-    <section class="mainpurchase-table">
-      <div class="maintable"  id="maintb">
-        <table >
-  <tr>
-    <th><input type="checkbox" id="checkbox" name="checkbox"></th>
-    <th>Username</th>
-    <th>User ID</th>
-    <th>Position</th>
-    <th>Contact</th>
-   <th>Status</th>
-    <th>Action</th>
-  </tr>
-    <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Francis O</td>
-    <td>#User001</td>
-    <td>Manager</td>
-    <td>08156747654</td>
-   <td><button id="paid">Acive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>
-    
-  </tr>
-       <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Chibuieze W</td>
-    <td>#User002</td>
-    <td>System Admin</td>
-    <td>07023476584</td>
-   <td><button id="paid">Acive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>
-    
-  </tr>
-        <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Collins O</td>
-    <td>#User003</td>
-    <td>Stock Manager</td>
-    <td>+4487639645</td>
-     <td><button id="due">Inactive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>
-    
-  </tr>
-  </tr>
-        <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Grace K</td>
-    <td>#User004</td>
-    <td>Stock Manager</td>
-    <td>++34983652398</td>
-    <td><button id="paid">Acive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>
-    
-  </tr>
-    
-        <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Emmanuel K</td>
-    <td>#User 005</td>
-    <td>Stock Manager</td>
-    <td>+4487639645</td>
-   <td><button id="paid">Acive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>  
-  </tr>
-          <tr>
-    <td><input type="checkbox" id="checkbox" name="checkbox"></td>
-    <td>Taofeeq A</td>
-    <td>#User006</td>
-    <td>Biller</td>
-    <td>+39092345609</td>
-      <td><button id="due">Inactive</button></td>
-   <td><span class="mdi--delete-outline"></span></td>
-    
-  </tr>
-  
-</table>
-      </div>
-    </section>
- 
-     <script src="main.js"></script>
-  </body>
-</html>
+      <div class="catergory_two">  
+        <form action="">
+            <div class="input-field">
+              <input type="text" name="" id="" placeholder="" required />
+              <label for=""> Rank</label>
+            </div>
+           
+           
+          </form>
+        </div>
+      </section>
+   
+          
+        <section>
+        <div class="final_status1">
+       <div class="botton">
+             <button type="button" id="cancel">Cancel</button>
+            <button type="submit">Submit</button>
+           </div>
+        </div>
+      </section>
+    </body>

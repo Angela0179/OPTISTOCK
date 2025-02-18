@@ -1,6 +1,6 @@
 "use script";
 document.querySelector(".menu-icon").addEventListener("click", function () {
-  const menuLinks = document.querySelector(".nav-bar");
+  const menuLinks = document.querySelector(".welcome-nav");
   menuLinks.classList.toggle("show");
   const icon = document.querySelector("#barz");
 });
