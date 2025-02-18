@@ -1,0 +1,157 @@
+*{
+    font-family: "Montserrat", serif;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    grid-template-columns:  1fr 4fr;
+    grid-template-rows: 0.3fr 4fr;
+}
+
+/*styling for sidebar starts here*/
+.sidebar{
+    grid-area: sidebar;
+    background: #100C2F;
+    border-top-left-radius: 1.9rem;
+    border-bottom-left-radius: 1.9rem;
+}
+nav{
+    margin-top: 3rem;
+    text-align: center;
+    
+  }
+  nav ul{
+    list-style-type: none;
+    
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #B0AFAF;
+    display: flex;
+    
+  
+  }
+ 
+  nav ul li a img{
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+  }
+  nav ul li a .fa-gear{
+    margin-right: 1rem;
+  }
+  hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+/*styling for sidebar ends here*/
+
+/*styling for header starts here*/
+.header{
+    grid-area: header;
+    text-align: center;
+    background: #FAF8F8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 80vw;
+   
+   
+}
+input[type =text]{
+    width: 23rem;
+    height: 2.9rem;
+    border-radius: 0.3rem;
+    border: 1px solid #757575;
+    padding: 0rem 1rem 0 1rem;
+    /* position: relative; */
+  }
+  /*.fa-magnifying-glass{
+    position: absolute;
+     max-width: 23rem;
+    left: 60rem;
+    top: 2rem;
+    color: #757575; 
+  }*/
+/*styling for header ends here*/
+
+/*styling for main div starts here*/
+main{
+    grid-area: main;
+    max-width: 80vw;
+    background: #E8E7E7;
+}
+.heading-text{
+    display: flex;
+    justify-content: space-between;
+    max-width: 72vw;
+    margin: auto;
+}
+.details{
+    background: #FFFFFF;
+    max-width: 67vw;
+    margin: auto;
+    padding: 2rem ;
+    border-radius: 20px;
+
+}
+.details h3{
+    margin-left: 2rem;
+}
+input[type=email]{
+    width: 23rem;
+    height: 2.9rem;
+    border-radius: 0.3rem;
+    border: 1px solid #757575;
+    padding: 0rem 1rem 0 1rem;
+    /* margin-right: 3rem; */
+}
+input[type=password]{
+    width: 23rem;
+    height: 2.9rem;
+    border-radius: 0.3rem;
+    border: 1px solid #757575;
+    padding: 0rem 1rem 0 1rem;
+}
+.input-all{
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+table{
+    border-spacing: 2rem    ;
+}
+
+/*this styling is specifically for edit-product.html*/
+#detailss{
+    margin-left: 2rem;
+    width: 50.2rem;
+    height: 2.9rem;
+    border-radius: 0.3rem;
+    border: 1px solid #757575;
+    padding: 0rem 1rem 0 1rem;
+}
+.btn-cancel-product{
+    color: #5E5C5C;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #E8E7E7;
+    border-radius: 5px;
+    border: none;
+    width: 131px;
+    height: 40px;
+    margin-left: 20rem;
+}
+.btn-save-product{
+    background: #4F41C2;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    width: 59px;
+    height: 40px;
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}

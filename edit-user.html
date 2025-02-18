@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opti-Stock/settings</title>
-    <link rel="stylesheet" href="product.css">
+    <title>Opti-Stock/edit-user</title>
+    <link rel="stylesheet" href="edit-user.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
 
         <div class="header"> 
             <div class="dashboard">
-                <h2>Settings</h2>
+                <h2>Edit User</h2>
             </div>
             <div class="div-input">
                 <input type="text" placeholder="search">
@@ -46,36 +46,52 @@
                 <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
             </div>
         </div>
-
-        <main class="settings-div">
+        <main class="edit-user-detail">
             <div class="heading-text">
-                <h3>Profile Settings</h3>
-                <p>Dashboard > <span>Settings</span></p>
+                <h3>Edit User Details</h3>
+                <p>Dashboard > Users<span> > Edit User</span></p>
             </div>
-            <div class="profile-set">
-                <div class="input-flex1">
-                    <input type="text" placeholder="User Name" id="userName" name="user">
-                    <input type="text" placeholder="User ID" id="userId" name="user">
-                </div>
-                <div class="input-flex2">
-                    <input type="text" placeholder="Contact" id="contact" name="contact">
-                    <input type="email" name="email" id="emailAddress" placeholder="E-mail"><br>
-                </div>
-                <button class="btn-safe-changes">Save Changes</button>
-            </div>
-            <div class="password">
-                <div class="input-flex1">
-                    <input type="text" placeholder="User ID" id="userId" name="user">
-                    <input type="text" placeholder="Old Password" id="passWord" name="oldP">
-                </div>
-                <div class="input-flex2">
-                    <input type="text" placeholder="New Password"  name="newP">
-                    <input type="email" name="confirmP" id="passWord" placeholder="Confirm Password">
-                </div>
-                <button class="btn-safe-changes">Change Password</button>
-            </div>
+            <div class="details">
+                <h3>User Details</h3>
+                <input type="text" placeholder="User Name" id="userName" class="input-all">
+                <input type="text" placeholder="Position" id="Position" class="input-all"> <br>
+                <input type="email" placeholder="E-mail" id="eMail" class="input-all">
+                <input type="text" placeholder="Contact" id="contact" class="input-all"> <br>
+                <input type="password" placeholder="password" id="passWord" class="input-all">
+                <input type="password" placeholder="Confirm Password" id="passWord" class="input-all">
+            
+
+            <table>
+                <caption>Permissions</caption>
+                <tr>
+                    <th>Add Product</th>
+                    <th>Edit Product</th>
+                    <th>Delete Product</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                </tr>
+                
+                
+                <tr>
+                    <th>Manage Orders</th>
+                    <th>Manage Stocks</th>
+                    <th>Manage Users</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                    <td><input type="checkbox">Allow <input type="checkbox">Deny</td>
+                </tr>
+
+            </table>
+            <button>Cancel</button><button>Save Changes</button>
+        </div>
         </main>
     </div>
+
     
 </body>
 </html>

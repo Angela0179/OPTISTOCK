@@ -14,7 +14,7 @@
 <body>
     <div class="container">
 
-        <div class="menu-bar">
+        <div class="menu-bar"> 
             <nav>
                 <img src="./imgs/logo-img.png" alt="logo-img.png">
                 <ul>
@@ -47,13 +47,21 @@
                 <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
             </div>
         </div>
+        
+        
         <div class="main-div1">
+            <!--this here is for mobile screen-->
+        <div class="mobile-header">
+            <h3>Dashboard</h3>
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <!-- <main class="content"> -->
             <div class="activ-date">
                 <h3>Activity</h3>
-                <h3><img src="./imgs/Today.png" alt="Today.png">5Jan - 11Jan week</h3>
+                <p><img src="./imgs/Today.png" alt="Today.png" class="calender-img"> 5 Jan - 11 Jan week</p>
                 
             </div>
+            <h3 class="summary-mobile">Inventary Summary</h3>
            <div class="activity">
                 
                 <div class="Inventory-value bg-white">
@@ -81,7 +89,7 @@
         </div>
             <div class="sales-purchase">
                 <div class="graph">
-                    <img src="./imgs/Frame 34316.png" alt="Frame 34316.png">
+                    <img src="./imgs/Frame 34316.png" alt="Frame 34316.png" class="frame34316-img">
                 </div>
 
                 <div class="top-selling-products">
@@ -97,10 +105,11 @@
                         
                     </div>
 
-                    <table>
+                    <table class="top-selling-p-table">
                         <thead>
                             <tr>
                                 <th colspan="2">Product</th>
+                                <th></th>
                                 <th>Price</th>
                                 <th>Orders</th>
                                 <th>Stock</th>
@@ -109,35 +118,40 @@
                         <tbody>
                         
                             <tr>
-                                <td colspan="2"> <img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="custom-beds 2.png">Bed Frame</td>
+                                <td colspan="2"> <img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="custom-beds 2.png"></td>
+                                <td>Bed Frame</td>
                                 <td>NGN 100,000</td>
                                 <td>102</td>
                                 <td>120</td>
                             </tr>
 
                             <tr>
-                                <td colspan="2"> <img src="./imgs/side-table.png" alt="custom-beds 2.png">Round Table</td>
+                                <td colspan="2"> <img src="./imgs/side-table.png" alt="custom-beds 2.png"></td>
+                                <td>Round Table</td>
                                 <td>NGN 45,000</td>
                                 <td>41</td>
                                 <td>220</td>
                             </tr>
 
                             <tr>
-                                <td colspan="2"> <img src="./imgs/color-chair.png" alt="color-chair.png">Dinning Chair</td>
+                                <td colspan="2"> <img src="./imgs/color-chair.png" alt="color-chair.png"></td>
+                                <td>Dinning Chair</td>
                                 <td>NGN 35,000</td>
                                 <td>76</td>
                                 <td>180</td>
                             </tr>
 
                             <tr>
-                                <td colspan="2"> <img src="./imgs/exe.chair.png" alt="exe.chair.png">Cushion Chair</td>
+                                <td colspan="2"> <img src="./imgs/exe.chair.png" alt="exe.chair.png"></td>
+                                <td>Cushion Chair</td>
                                 <td>NGN 90,000</td>
                                 <td>8</td>
                                 <td>50</td>
                             </tr>
 
                             <tr>
-                                <td colspan="2"> <img src="./imgs/black-w-chair.png" alt="black-w-chair.png">Dinning Chair</td>
+                                <td colspan="2"> <img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
+                                <td>Dinning Chair</td>
                                 <td>NGN 25,000</td>
                                 <td>100</td>
                                 <td>340</td>
@@ -158,11 +172,12 @@
                         <option value="last month">Last  month</option>
                     </select>
                 </div>
-                    <table>
+                    <table class="recent-order-table">
                         <thead>
                             <tr>
                                 <th><input type="checkbox"> </th>
                                 <th colspan="2">Product</th>
+                                <th></th>
                                 <th>Order ID</th>
                                 <th>Customer</th>
                                 <th>Quantity</th>
@@ -174,35 +189,38 @@
                         <tbody>
                              <tr>
                                 <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png">Bed Frame</td>
+                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
+                                <td>Bed Frame</td>
                                 <td>#340190</td>
                                 <td>Jack Obiora</td>
                                 <td>1</td>
                                 <td>NGN 100,000</td>
-                                <td class="paid">Paid</td>
-                                <td class="delivered">Delivered</td>
+                                <td><p class="paid">Paid</p></td>
+                                <td><p class="delivered">Delivered</p></td>
                             </tr>
 
                             <tr>
                                 <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png">Dinning Chair</td>
+                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
+                                <td>Dinning Chair</td>
                                 <td>#818022</td>
                                 <td>Chief Judgr E.</td>
                                 <td>20</td>
                                 <td>NGN 500,000</td>
-                                <td class="paid">Paid</td>
-                                <td class="delivered">Delivered</td>
+                                <td><p class="paid">Paid</p></td>
+                                <td><p class="delivered">Delivered</p></td>
                             </tr>
 
                             <tr>
                                 <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/color-chair.png" alt="black-w-chair.png">Dinning Chair</td>
+                                <td colspan="2"><img src="./imgs/color-chair.png" alt="black-w-chair.png"></td>
+                                <td>Dinning Chair</td>
                                 <td>#676400</td>
                                 <td>Chioma Okoro</td>
                                 <td>5</td>
                                 <td>NGN 175,000</td>
-                                <td class="pending">Pending</td>
-                                <td class="Processing">Processing</td>
+                                <td><p class="pending">Pending</p></td>
+                                <td><p  class="Processing">Processing</p></td>
                             </tr>
                         </tbody>
                     </table>
@@ -217,18 +235,19 @@
                     <div class="last-table">
                         <div class="text-last-table">
                         <h3>Stock Alert</h3>
-                        <select name="days" id="weekday">
-                            <option value="Today">Today</option>
-                            <option value="Yesterday">Yesterday</option>
-                            <option value="two-days">Two days ago</option>
-                            <option value="Lastweek">Lastweek</option>
-                            <option value="last month">Last  month</option>
-                        </select>
-                    </div>
+                            <select name="days" id="weekday">
+                                <option value="Today">Today</option>
+                                <option value="Yesterday">Yesterday</option>
+                                <option value="two-days">Two days ago</option>
+                                <option value="Lastweek">Lastweek</option>
+                                <option value="last month">Last  month</option>
+                            </select>
+                        </div>
                         <table>
                         <thead>
                             <tr>
                                 <th colspan="2">Product</th>
+                                <th></th>
                                 <th>Product ID</th>
                                 <th>Warehouse</th>
                                 <th>Remaining Quantity</th>
@@ -236,28 +255,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png">Bed Frame</td>
+                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
+                                <td>Bed Frame</td>
                                 <td>#279101</td>
                                 <td>Warehouse 01</td>
                                 <td>04</td>
                             </tr>
                             <tr>
-                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png">Dining Chair</td>
+                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
+                                <td>Dining Chair</td>
                                 <td>#119204</td>
                                 <td>Warehouse 02</td>
                                 <td>08</td>
                             </tr>
                             <tr>
-                                <td colspan="2"><img src="./imgs/color-chair.png" alt="color-chair.png">Dining Chair</td>
+                                <td colspan="2"><img src="./imgs/color-chair.png" alt="color-chair.png"></td>
+                                <td>Dining Chair</td>
                                 <td>#787003</td>
                                 <td>Warehouse 03</td>
                                 <td>16</td>
                             </tr>
 
                         </tbody>
-                    </table></div>
+                    </table>
+                </div>
                     <div class="product-summary">
-                        <img src="./imgs/Frame 34322-pie.png" alt="product summary chart">
+                        <img src="./imgs/Frame 34322-pie.png" alt="product summary chart" class="product-summary-img">
                     </div>
                 </div>
                 </div>

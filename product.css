@@ -38,6 +38,9 @@ nav{
   nav ul li a .fa-gear{
     margin-right: 1rem;
   }
+  ul li a:hover{
+    background: #7653DC;
+  }
   hr{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -338,38 +341,51 @@ cursor: pointer;
     height: 326px;
     border-radius: 20px;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     align-content: center;
 }
-input[id=emailAddress]{
-    width: 300px;
-    height: 46px;
-    border-radius: 4px;
-    border: 1px solid #757575;
-    padding: 0 16px;
+.input-flex1{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 2.2rem;
+
 }
-input[id=contact]{
-    width: 300px;
-    height: 46px;
-    border-radius: 4px;
-    border: 1px solid #757575;
-    padding: 0 16px;
-}
-input[id=userId]{
-    width: 300px;
-    height: 46px;
-    border-radius: 4px;
-    border: 1px solid #757575;
-    padding: 0 16px;
+.input-flex2{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin: auto;
+    /* margin-right: 2rem; */
+    
 }
 input[id=userName]{
-    width: 300px;
-    height: 46px;
+    margin-right: 2rem; 
+}
+ input[id=emailAddress]{
+    width: 367px;
+    height: 40px;
     border-radius: 4px;
     border: 1px solid #757575;
     padding: 0 16px;
     margin-left: 2rem;
 }
+.btn-safe-changes{
+    background: #4F41C2;
+    border: none;
+    border-radius: 5px;
+    width: 187px;
+    height: 43px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 26rem;
+}
+
+
+
 .password{
     grid-area: content22;
     background: #FFFFFF;
@@ -377,4 +393,13 @@ input[id=userName]{
     height: 326px;
     border-radius: 20px;
     margin: auto;
+    align-content: center;
+}
+input[id="passWord"]{
+    width: 367px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #757575;
+    padding: 0 16px;
+    margin-left: 2rem;
 }
