@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/forgot_password.css" />
+    <!--google icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios"
+    />
+    <title>Enter_OTP</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="opti-login">
+        <div class="login-name">
+          <img src="/images/login.png" alt="" />
+          <h1>Opti-Stock</h1>
+          <p>"manage more, stress less"</p>
+          <div class="one">
+            <div class="two"></div>
+          </div>
+        </div>
+        <div class="login-details">
+          <h3>
+            <a href="">
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+              Back</a
+            >
+          </h3>
+
+          <h1>Enter OTP</h1>
+          <h4>
+            We have sent a code to your registered email address
+            mathew.west@outlook.com.
+          </h4>
+          <form class="form">
+            <div class="inputContainer">
+              <input
+                type="text"
+                maxlength="1"
+                required
+                oninput="handleInput(1,event)"
+                onkeydown="handleBackspace(1, event)"
+                id="bord"
+                value="1"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                required
+                oninput="handleInput(2,event)"
+                onkeydown="handleBackspace(2, event)"
+                id="bord"
+                value="5"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                required
+                oninput="handleInput(3,event)"
+                onkeydown="handleBackspace(3, event)"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                required
+                oninput="handleInput(4,event)"
+                onkeydown="handleBackspace(4, event)"
+              />
+              <input
+                type="text"
+                maxlength="1"
+                required
+                oninput="handleInput(5,event)"
+                onkeydown="handleBackspace(5, event)"
+              />
+            </div>
+          </form>
+          <button class="verifyBtn" type="submit">
+            <a id="btns" href="/pages/success.html">Verify</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="/JS/main.js"></script>
+  </body>
+</html>

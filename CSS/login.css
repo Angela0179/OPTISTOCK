@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5848dd;
+  --sec-color: #9747ff;
+  --main-color: #4f41c2;
+  --btn-color1: #6943d8;
+  --btn-color2: #2e1d61;
+  --text-color: #616161;
+  --text-color2: #a4a3a3;
+  --bg-color: #100c2f;
+  --txt-color: #ffffff;
+  --del-color: #f24822;
+  --recieved-color: #14ae5c;
+  --pending: #eb9b2c;
+  --ordered-color: #6943d8;
+  --paid-color: #dcfeec;
+  --partial-color: #efedff;
+  --due-color: #ffebe7;
+  --due: #f24822;
+  --bg-pending: #fef3dc;
+}
+html {
+  font-size: 60%;
+}
+body {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none;
+  background-color: #000;
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 1.8rem;
+  color: #000;
+}
+h5 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.8rem;
+}
+
+.opti-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 750px;
+  height: 600;
+  padding: 20px;
+  gap: 0px;
+  opacity: 0px;
+  margin: auto;
+  margin-top: 5rem;
+}
+.login-name h1 {
+  padding-left: 12rem;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.88px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-left: 1rem;
+}
+.login-name p {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 11rem;
+}
+.login-name {
+  position: relative;
+  width: 370px;
+  height: 80vh;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 0;
+  padding-top: 15rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-image: linear-gradient(#9747ff, #4f41c2);
+  color: #ffffff;
+}
+.login-name .one {
+  margin-top: 10rem;
+  width: 188.96px;
+  height: 162.59px;
+  transform: rotate(0deg);
+  border: 0.5px solid transparent;
+  left: 0px;
+}
+.login-name .two {
+  margin-top: 18rem;
+  width: 188.96px;
+  height: 2.59px;
+  transform: rotate(0deg);
+
+  left: 0px;
+}
+.one::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 136px;
+  background-color: #ffffff96;
+  bottom: 200px;
+  left: 0px;
+  transform: rotate(13.53deg);
+}
+
+.one::after {
+  content: "";
+  position: absolute;
+  height: 186px;
+  width: 1px;
+  left: 150px;
+  background-color: #ffffff96;
+  bottom: 0px;
+  transform: rotate(-10.53deg);
+}
+.two::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 106px;
+  background-color: #ffffff96;
+  bottom: 200px;
+  left: 0px;
+  transform: rotate(13.53deg);
+}
+
+.two::after {
+  content: "";
+  position: absolute;
+  height: 177px;
+  width: 1px;
+  left: 120px;
+  background-color: #ffffff96;
+  bottom: 12px;
+  transform: rotate(-10.53deg);
+}
+.login-name img {
+  width: 60px;
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+  margin-left: 15rem;
+}
+.login-details {
+  width: 370px;
+  height: 80vh;
+  background-color: #ffffff;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 10rem;
+  padding-top: 10rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.login-details h1 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36.57px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.login-details h3 {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.login-details h5 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+.login-details h5 a {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.login-details h5 a:hover {
+  color: #100c2f;
+}
+.login-details h6 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+}
+.login-details h6 span {
+  color: var(--btn-color1);
+}
+
+button {
+  width: 200px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid var(--btn-color1);
+  background-color: var(--btn-color1);
+  color: var(--txt-color);
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+input:hover {
+  border: 1px solid var(--text-color2);
+  border-bottom: 1px solid #000;
+}
+.text-field {
+  position: relative;
+  margin: 10px 2.5px 20px 2.5px;
+}
+
+input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px 4px 0px 0px;
+  opacity: 0px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid var(--text-color2);
+  border-right: 1px solid var(--text-color2);
+  background-color: transparent;
+  padding: 7px;
+  border-radius: 2px;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid var(--btn-color1);
+  background-color: #fff;
+}
+
+label {
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s;
+  border: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+  left: 5px;
+  font-size: xx-small;
+  font-weight: 600;
+  color: var(--btn-color1);
+  background-color: #fff;
+  padding: 0 5px 0 5px;
+}
+span a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2e1d61;
+  border: none;
+}
