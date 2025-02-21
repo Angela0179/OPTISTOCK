@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--flaticon-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css"
@@ -38,17 +46,17 @@
               <nav class="welcome-nav" id="navigation">
                 <ul>
                   <li>
-                    <a class="tag " href="/pages/purchases.html">
+                    <a class="tag " href="/index.html">
                       <img src="/images/dashboard.png" alt="" /> Dashboard
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="#">
+                    <a class="tag" href="/products.html">
                       <img src="/images/cart.png" alt="" /> Product
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="#">
+                    <a class="tag" href="/category.html">
                       <img src="/images/catergory.png" alt="" /> Catergory
                     </a>
                   </li>
@@ -63,12 +71,12 @@
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="#">
+                    <a class="tag" href="/transfer.html">
                       <img src="/images/transfer.png" alt="" /> Transfer
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="#">
+                    <a class="tag" href="/reports.html">
                       <img src="/images/report.png" alt="" /> Report
                     </a>
                   </li>
@@ -83,7 +91,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="tag" href="#">
+                    <a class="tag" href="/settings.html">
                       <img src="/images/setting.png" alt="" /> Settings
                     </a>
                   </li>
@@ -94,7 +102,7 @@
               <nav class="welcome-nav-1">
                 <ul>
                     <li>
-                    <a href="#">
+                    <a href="/pages/login.html">
                       <img id="logout" src="/images/out.png" alt="" /> Logout
                     </a>
                   </li>
@@ -105,11 +113,25 @@
         </div>
       </aside>
     </div>
+    <section class="mobile_nav">
+    <div class="topnav_mobile">
+        <div class="purchases">
+        <h1>Purchases</h1>
+      </div>
+       <div class="bars">
+        <button class="bar menu-icon" type="button">
+          <i id="barz" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    </section>
     <section class="main-content">
         <div class="top-nav">
                <div class="sec-name">
                 <h1>Purchases</h1>
                </div>
+               
               <div class="inputfield">
                  
                 <input type="search" id="search"  name="search" placeholder="Search  " >
@@ -180,7 +202,8 @@
               </div>
                <div class="inputfield2">
                 <span class="material-symbols-light--add-rounded"></span>
-                <input type="search" id="create"  name="filter" placeholder="Create Puchase  " >
+                <a href="/pages/create_purchase.html">Create Purchase</a>
+                <!-- <input type="search" id="create"  name="filter"   > -->
                 
                
               </div>

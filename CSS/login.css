@@ -56,12 +56,13 @@ p {
   justify-content: space-evenly;
 
   width: 750px;
-  height: 600;
+  height: 80vh;
   padding: 20px;
   gap: 0px;
   opacity: 0px;
   margin: auto;
   margin-top: 5rem;
+  overflow: hidden;
 }
 .login-name h1 {
   padding-left: 12rem;
@@ -168,7 +169,7 @@ p {
   background-color: #ffffff;
   gap: 0px;
   opacity: 0px;
-  padding-left: 10rem;
+  padding-left: 7rem;
   padding-top: 10rem;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -229,8 +230,8 @@ p {
 }
 
 button {
-  width: 200px;
-  height: 30px;
+  width: 240px;
+  height: 35px;
   border-radius: 50px;
   border: 1px solid var(--btn-color1);
   background-color: var(--btn-color1);
@@ -240,12 +241,60 @@ button {
   margin-bottom: 1rem;
   cursor: pointer;
 }
-
+button a {
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--txt-color);
+}
 input:hover {
   border: 1px solid var(--text-color2);
   border-bottom: 1px solid #000;
 }
-.text-field {
+
+.input-field {
+  position: relative;
+  width: 240px;
+  height: 35px;
+  margin: 10px 2.5px 20px 2.5px;
+}
+.input-field input {
+  width: 100%;
+  height: 100%;
+  outline: 1px solid var(--text-color2);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 5px;
+  font-size: 10px;
+}
+.input-field label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: top 0.2s;
+  background-color: white;
+  color: #616161;
+}
+.input-field input:focus {
+  outline: 1px solid var(--btn-color1);
+  color: var(--text-color);
+}
+.input-field input:focus + label {
+  top: -10px;
+  left: 5px;
+  color: var(--btn-color1);
+  font-size: 8px;
+  font-weight: 600;
+}
+.input-field input:not(:placeholder-shown) + label {
+  top: -10px;
+  color: var(--btn-color1);
+}
+/* .text-field {
   position: relative;
   margin: 10px 2.5px 20px 2.5px;
 }
@@ -267,7 +316,7 @@ input {
 }
 
 input:focus {
-  border: 2px solid var(--btn-color1);
+  border: 1px solid var(--btn-color1);
   background-color: #fff;
 }
 
@@ -279,18 +328,26 @@ label {
   top: 10px;
   transition: 0.2s;
   border: none;
+  background-color: white;
 }
 
 input:focus ~ label,
 input:valid ~ label {
   top: -5px;
   left: 5px;
-  font-size: xx-small;
+  font-size: 7px;
   font-weight: 600;
   color: var(--btn-color1);
   background-color: #fff;
-  padding: 0 5px 0 5px;
+  padding: 0 1px 0 1px;
 }
+input:not(:placeholder-shown) + label {
+  top: -5px;
+  left: 5px;
+  color: var(--btn-color1);
+  border: 1px solid;
+} */
+
 span a {
   text-decoration: none;
   cursor: pointer;
@@ -301,4 +358,168 @@ a {
 button:hover {
   background-color: #2e1d61;
   border: none;
+}
+.mobile {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 2rem;
+}
+.mobile-intro1 {
+  width: 50px;
+  height: 44px;
+  display: none;
+}
+.mobile-intro1 img {
+  width: 100%;
+  height: 100%;
+}
+.input-field input:hover {
+  border: 1px solid var(--btn-color1);
+}
+
+/*desktop screen*/
+@media only screen and (max-width: 700px) {
+  .opti-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 550px;
+    height: 80vh;
+    padding: 20px;
+    gap: 0px;
+    opacity: 0px;
+    margin: auto;
+    margin-top: 5rem;
+    overflow: hidden;
+  }
+  .login-name h1 {
+    padding-left: 7rem;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.88px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 1rem;
+  }
+  .login-name p {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 6rem;
+  }
+  .login-name {
+    position: relative;
+    width: 260px;
+    height: 80vh;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 0;
+    padding-top: 15rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(#9747ff, #4f41c2);
+    color: #ffffff;
+  }
+  .login-name img {
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 9rem;
+  }
+  .login-details {
+    width: 270px;
+    height: 80vh;
+    background-color: #ffffff;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 4rem;
+    padding-top: 10rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .input-field {
+    position: relative;
+    width: 200px;
+    height: 35px;
+    margin: 10px 2.5px 20px 2.5px;
+  }
+  button {
+    width: 200px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid var(--btn-color1);
+    background-color: var(--btn-color1);
+    color: var(--txt-color);
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  .input-field input:not(:placeholder-shown) + label {
+    top: -10px;
+    color: var(--btn-color1);
+  }
+}
+/* mobile screen */
+@media only screen and (max-width: 500px) {
+  .opti-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 430px;
+    margin-top: 0.1rem;
+    background-color: #eae8ed;
+  }
+  .login-name {
+    display: none;
+  }
+  .login-details {
+    width: 100%;
+    height: 100%;
+    padding-top: 7rem;
+    padding-left: 5rem;
+    border-radius: 5px;
+    background-color: #eae8ed;
+  }
+  .mobile-intro1 {
+    display: block;
+  }
+  .mobile {
+    margin-bottom: 5rem;
+    gap: 120px;
+  }
+  button {
+    border-radius: 5px;
+    width: 300px;
+  }
+
+  .input-field {
+    position: relative;
+    width: 300px;
+    height: 35px;
+    margin: 10px 2.5px 20px 2.5px;
+  }
+  .login-details h5 {
+    padding-left: 22rem;
+  }
+  .input-field input {
+    background-color: #eae8ed;
+  }
+  .input-field label {
+    background-color: #eae8ed;
+  }
+  .input-field input:focus + label {
+    background-color: #eae8ed;
+    top: -9px;
+  }
 }

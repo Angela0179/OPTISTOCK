@@ -67,6 +67,7 @@ aside {
   padding: 1rem;
 }
 .sidebar {
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -203,6 +204,48 @@ aside {
   background-color: var(--ordered-color);
   opacity: 1;
 }
+/*nav*/
+.mobile_nav {
+  margin: auto;
+  margin-left: 10rem;
+  background-color: var(--btn-color1);
+  display: none;
+}
+.topnav_mobile {
+  display: flex;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin-left: 15rem;
+  margin-right: 5rem;
+  height: 10vh;
+}
+.purchases h1 {
+  color: #000;
+  font-size: 2rem;
+}
+/*barz button*/
+.bars button {
+  max-width: 40px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 10px;
+  color: white;
+  background-color: transparent;
+}
+.bars {
+  display: block;
+}
+.fa-bars {
+  font-size: 29px;
+  color: #fff;
+}
+
 /*main section nav*/
 .main-content {
   margin: auto;
@@ -356,7 +399,7 @@ label {
   display: flex;
   align-items: center;
   width: 10rem;
-  height: 5vh;
+  height: 6vh;
   border: 1px solid var(--text-color2);
   border-radius: 6px;
   margin: 0 auto;
@@ -369,7 +412,7 @@ label {
   display: flex;
   align-items: center;
   width: 20rem;
-  height: 5vh;
+  height: 6vh;
   border: 1px solid var(--text-color2);
   border-radius: 6px;
   margin: 0 auto;
@@ -378,7 +421,12 @@ label {
   color: var(--txt-color);
   gap: 15px;
 }
-
+.inputfield2 a {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
 .inputfield3 {
   position: relative;
   display: flex;
@@ -1150,5 +1198,32 @@ table td #partial {
     height: 4vh;
     background-color: white;
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bars {
+    display: flex;
+    margin-left: 1rem;
+  }
+  .welcome-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1024px;
+    background-color: var(--bg-color);
+    padding-inline: 0.1rem;
+    padding-block: 0.1rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    max-width: 20.563rem;
+    min-width: 19rem;
+    z-index: 99;
+    padding: 1rem;
+
+    float: right;
+  }
+  .welcome-nav.show {
+    display: flex;
+    width: 50%;
   }
 }
