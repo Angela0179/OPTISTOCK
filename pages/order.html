@@ -23,7 +23,14 @@
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">
+         <label >
+                <input type="checkbox" id="harm" style="color: white; ">
+                <div class="toggle">
+                  <span class="top_line common"></span>
+                   <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+      <aside class="sidebar" id="mysidebar">
         <div class="sidebar-top">
           <header class="sidebar-header">
             <div class="welcome-block">
@@ -38,7 +45,7 @@
               <nav class="welcome-nav" id="navigation">
                 <ul>
                   <li>
-                    <a class="tag " href="/index.html">
+                    <a class="tag " href="/dashboard.html">
                       <img src="/images/dashboard.png" alt="" /> Dashboard
                     </a>
                   </li>
@@ -104,7 +111,15 @@
           </header>
         </div>
       </aside>
+         </label>
     </div>
+    <section class="mobile_nav">
+    <div class="topnav_mobile">
+        <div class="purchases">
+        <h1>Order</h1>
+      </div>
+   </div>
+ </section>
     <section class="main-content">
         <div class="top-nav">
                <div class="sec-name">
@@ -176,7 +191,7 @@
       </div>
     </section>
     <section class="mainpurchase-table">
-      <div class="maintable">
+      <div class="maintable" id="desktop_table">
         <table>
   <tr>
     <th><input type="checkbox" id="checkbox" name="checkbox"></th>
@@ -305,8 +320,96 @@
 </table>
       </div>
     </section>
+    <section class="mainpurchase-table">
+      <div class="maintable"  id="mobile_table">
+        <table>
+  <tr>
+    <th>Product</th>
+    <th>Order ID</th>
+    <th>Amount</th>
+   <th>Quantity</th>
+    <th>Action</th>
+  </tr>
+   <tr>
+  <td><img src="/images/table.jpeg" alt=""> Rounded Table</td>
+   <td>#36288</td>
+   <td>NG495,000</td>
+    <td>11</td>
+  <td><span class="mdi--delete-outline"></span></td>
+    
+  </tr>
+       <tr>
+    <td><img src="/images/sofa.jpeg" alt="">Nova Creamy Sofa</td>
+   <td>#730152</td>
+     <td>NG160,000</td>
+    <td>2</td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   <td><img src="/images/bed.jpeg" alt="">Bed Frame</td>
+    <td>#562968</td>
+    <td>NG400,000</td>
+    <td>4</td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    <td><img src="/images/chair.jpeg" alt="">Ancient Chair</td>
+    <td>#4528204</td>
+      <td>NG1,134,000</td>
+    <td>6</td>
+      <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   <td><img src="/images/seat.jpeg" alt="">Pashe Dinning Chair</td>
+    <td>#633920</td>
+    <td>NG 60,000</td>
+   <td>2</td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   
+    <td><img src="/images/sit.jpeg" alt="">Mordern Arm Chair</td>
+    <td>#307304</td>
+        <td>NG1,044,000</td>
+   <td>6</td>
+   <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+ 
+    <td><img src="/images/long chair.jpeg" alt="">Cushion Chair</td>
+    <td>#246789</td>
+    <td>NG9,00,000</td>
+    <td>10</td>
+   <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   <td><img src="/images/stool.jpeg" alt="">Surllivian Ancient Table</td>
+    <td>#837203</td>
+    <td>NG52,000</td>
+    <td>2</td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+        <tr>
+   <td><img src="/images/stickchair.jpeg" alt="">Leather Dinning Chair</td>
+    <td>#201573</td>
+    <td>NG75,000</td>
+   <td>3</td>
+   <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+          <tr>
+    <td><img src="/images/sidestool.jpeg" alt="">Square Oak Coffe Table</td>
+    <td>#593721</td>
+    <td>NG250,000</td>
+    <td>10</td>
+   <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+        </table>
+      </div>
+    </section>
+      </div>
+    </section>
      <section class="filter">
-      <div class="mainfilter1">
+      <div class="mainfilter1" id="mobile_counter">
         <div class="foot">
           <h5>Showing 10 entities</h5>
         </div>
@@ -316,6 +419,16 @@
           <a href="#">3</a>
           <a href="#"><span class="dashicons--arrow-right-alt2"></span></a>
         </div>
+      </div>
+     </section>
+     <section class="filter">
+      <div class="mainfilter1" id="bottom_nav">
+        <div class="foot"><a href="#"><span class="material-symbols--dashboard-outline-rounded"></span></a>
+      </div>
+        <div class="foot"><a href="#"><span class="mdi--trolley"></span></a>
+      </div>
+      <div class="foot"><a href="#"><span class="bx--purchase-tag"></span></a></div>
+            <div class="foot"><a href="#"><span class="streamline--transfer-van"></span></a></div>
       </div>
      </section>
      <script src="main.js"></script>

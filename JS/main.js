@@ -1,9 +1,13 @@
 "use script";
-document.querySelector(".menu-icon").addEventListener("click", function () {
-  const menuLinks = document.querySelector(".welcome-nav");
-  menuLinks.classList.toggle("show");
-  const icon = document.querySelector("#barz");
-});
+// document.querySelector(".menu-icon").addEventListener("click", function () {
+//   const menuLinks = document.querySelector(".sidebar");
+//   menuLinks.classList.toggle("show");
+//   const icon = document.querySelector("#barz");
+// });
+// const mySidebar = getElementById("mysidebar");
+// function togglemySidebar() {
+//   mySidebar.classlist.toogle("show");
+// }
 
 // Get the container element
 var myContainer = document.getElementById("navigation");
