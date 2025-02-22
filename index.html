@@ -1,301 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opti-Stock Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@155&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <div class="container">
-
-        <div class="menu-bar"> 
-            <nav>
-                <img src="./imgs/logo-img.png" alt="logo-img.png">
-                <ul>
-                    <li class="dashboard1"><a href="index.html"><img src="./imgs/Dashboard Layout.png">Dashboard</a></li>
-                    <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png">Products</a></li>
-                    <li><a href="category.html"> <img src="./imgs/Categorize.png" alt="Categorize.png"> Categories</a></li>
-                    <li><a href="#"><img src="./imgs/Purchase Order.png" alt="Purchase Order.png"> Orders</a></li>
-                    <li><a href="#"><img src="./imgs/Bill.png" alt="">Purchases</a></li>
-                    <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png" alt="">Transfer</a></li>
-                    <li><a href="reports.html"><img src="./imgs/Graph Report.png" alt="">Reports</a></li>
-                    <li><a href="#"><img src="./imgs/Supplier.png" alt="">Supplies</a></li>
-                    <li><a href="#"><img src="./imgs/Users.png" alt="">Users</a></li>
-                    <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
-                    
-                    <hr>
-                    <li><a href="#"><img src="./imgs/Logout.png">Logout</a></li>
-                </ul>
-                
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="opti-login">
+        <div class="login-name">
+          <img src="/images/login.png" alt="" />
+          <h1>Opti-Stock</h1>
+          <p>"manage more, stress less"</p>
+          <div class="one">
+            <div class="two"></div>
+          </div>
         </div>
-        <div class="header-div">
-            <div class="dashboard">
-                <h2>Dashboard</h2>
+        <div class="login-details">
+          <!-- <h1>Hello Again!</h1>
+          <h3>Sign Up to Get Started</h3> -->
+          <div class="mobile">
+            <div class="mobile-intro">
+              <h1>Hello Again!</h1>
+              <h3>Welcome Back</h3>
             </div>
-            <div class="div-input">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="search">
+            <div class="mobile-intro1">
+              <img src="/images/dimensions (2).png" alt="" />
             </div>
-            <div class="div-francis">
-                <img src="./imgs/Frame 34309-francis.png" alt="-francis.png">
+          </div>
+          <form action="">
+            <div class="input-field">
+              <input type="text" name="" id="" placeholder="" required />
+              <label for="">Full Name</label>
             </div>
+            <div class="input-field">
+              <input type="email" name="" id="" placeholder="" required />
+              <label for="">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="password" name="" id="" placeholder="" required />
+              <label for="">Password</label>
+            </div>
+          </form>
+
+          <button type="submit"><a href="/index.html">Register</a></button>
+          <h6>
+            Already have an account?<span
+              ><a href="/pages/login.html">Login</a></span
+            >
+          </h6>
         </div>
-        
-        
-        <div class="main-div1">
-            <!--this here is for mobile screen-->
-        <div class="mobile-header">
-            <h3>Dashboard</h3>
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <!-- <main class="content"> -->
-            <div class="activ-date">
-                <h3>Activity</h3>
-                <p><img src="./imgs/Today.png" alt="Today.png" class="calender-img"> 5 Jan - 11 Jan week</p>
-                
-            </div>
-            <h3 class="summary-mobile">Inventary Summary</h3>
-           <div class="activity">
-                
-                <div class="Inventory-value bg-white">
-                    <h4>Inventory Value</h4><img src="./imgs/fluent_money-16-filled.png" alt="money-16-filled.png" class="activ-image1">
-                    <p class="activ-text">NGN 290,000.00</p>
-                    <img src="./imgs/stash_chart-trend-up-duotone.png" alt="trend-up-duotone.png" class="activ-image"><p><span>19.6%</span> from last week</p>
-                </div>  
-                <div class="total-orders bg-white">
-                    <h4>Total Orders</h4> <img src="./imgs/Purchase Order.png" alt="Purchase Order.png" class="activ-image1">
-                    <p class="activ-text">3,046</p>
-                    <img src="./imgs/stash_chart-trend-up-duotone.png" alt="trend-up-duotone.png" class="activ-image"><p><span>8.04%</span> from last week</p>
-                </div>
-                <div class="new-orders bg-white">
-                    <h4>New Orders</h4><img src="./imgs/users-orange.png" alt="users-orange.png" class="activ-image1">
-                    <p class="activ-text">817</p>
-                    <img src="./imgs/stash_chart-trend-up-duotone.png" alt="trend-up-duotone.png" class="activ-image"><p><span>2.23%</span> from last week</p>
-                </div>
-                <div class="activity-item bg-white">
-                    <h4>Delivered</h4> <img src="./imgs/van-blue.png" alt="blu-van-png" class="activ-image1">
-                    <p class="activ-text">700</p>
-                    <img src="./imgs/stash_chart-trend-up-duotone.png" alt="trend-up-duotone.png" class="activ-image"><p><span>7.77%</span> from last week</p>
-                </div>
-
-            </div> 
-        </div>
-            <div class="sales-purchase">
-                <div class="graph">
-                    <img src="./imgs/Frame 34316.png" alt="Frame 34316.png" class="frame34316-img">
-                </div>
-
-                <div class="top-selling-products">
-                    <div class="top-text">
-                        <h3>Top selling products</h3>
-                        <select name="days" id="weekday">
-                            <option value="Today">Today</option>
-                            <option value="Yesterday">Yesterday</option>
-                            <option value="two-days">Two days ago</option>
-                            <option value="Lastweek">Lastweek</option>
-                            <option value="last month">Last  month</option>
-                        </select>
-                        
-                    </div>
-
-                    <table class="top-selling-p-table">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Product</th>
-                                <th></th>
-                                <th>Price</th>
-                                <th>Orders</th>
-                                <th>Stock</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        
-                            <tr>
-                                <td colspan="2"> <img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="custom-beds 2.png"></td>
-                                <td>Bed Frame</td>
-                                <td>NGN 100,000</td>
-                                <td>102</td>
-                                <td>120</td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2"> <img src="./imgs/side-table.png" alt="custom-beds 2.png"></td>
-                                <td>Round Table</td>
-                                <td>NGN 45,000</td>
-                                <td>41</td>
-                                <td>220</td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2"> <img src="./imgs/color-chair.png" alt="color-chair.png"></td>
-                                <td>Dinning Chair</td>
-                                <td>NGN 35,000</td>
-                                <td>76</td>
-                                <td>180</td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2"> <img src="./imgs/exe.chair.png" alt="exe.chair.png"></td>
-                                <td>Cushion Chair</td>
-                                <td>NGN 90,000</td>
-                                <td>8</td>
-                                <td>50</td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="2"> <img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
-                                <td>Dinning Chair</td>
-                                <td>NGN 25,000</td>
-                                <td>100</td>
-                                <td>340</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-             
-            <div class="recent-orders">
-                <div class="recent-orders-text">
-                    <h3>Recent Orders</h3>
-                    <select name="days" id="weekday">
-                        <option value="Today">Today</option>
-                        <option value="Yesterday">Yesterday</option>
-                        <option value="two-days">Two days ago</option>
-                        <option value="Lastweek">Lastweek</option>
-                        <option value="last month">Last  month</option>
-                    </select>
-                </div>
-                    <table class="recent-order-table">
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox"> </th>
-                                <th colspan="2">Product</th>
-                                <th></th>
-                                <th>Order ID</th>
-                                <th>Customer</th>
-                                <th>Quantity</th>
-                                <th>Amount</th>
-                                <th>Payment</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                             <tr>
-                                <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
-                                <td>Bed Frame</td>
-                                <td>#340190</td>
-                                <td>Jack Obiora</td>
-                                <td>1</td>
-                                <td>NGN 100,000</td>
-                                <td><p class="paid">Paid</p></td>
-                                <td><p class="delivered">Delivered</p></td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
-                                <td>Dinning Chair</td>
-                                <td>#818022</td>
-                                <td>Chief Judgr E.</td>
-                                <td>20</td>
-                                <td>NGN 500,000</td>
-                                <td><p class="paid">Paid</p></td>
-                                <td><p class="delivered">Delivered</p></td>
-                            </tr>
-
-                            <tr>
-                                <td><input type="checkbox"> </td>
-                                <td colspan="2"><img src="./imgs/color-chair.png" alt="black-w-chair.png"></td>
-                                <td>Dinning Chair</td>
-                                <td>#676400</td>
-                                <td>Chioma Okoro</td>
-                                <td>5</td>
-                                <td>NGN 175,000</td>
-                                <td><p class="pending">Pending</p></td>
-                                <td><p  class="Processing">Processing</p></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>  
-                
-                <div class="stock-alert">
-                <!-- <div class="stock-alert-text">
-                    <h3>Stock Alert</h3>
-                    <button>View All</button>
-                </div> -->
-                <div class="stock-table">
-                    <div class="last-table">
-                        <div class="text-last-table">
-                        <h3>Stock Alert</h3>
-                            <select name="days" id="weekday">
-                                <option value="Today">Today</option>
-                                <option value="Yesterday">Yesterday</option>
-                                <option value="two-days">Two days ago</option>
-                                <option value="Lastweek">Lastweek</option>
-                                <option value="last month">Last  month</option>
-                            </select>
-                        </div>
-                        <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2">Product</th>
-                                <th></th>
-                                <th>Product ID</th>
-                                <th>Warehouse</th>
-                                <th>Remaining Quantity</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="2"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
-                                <td>Bed Frame</td>
-                                <td>#279101</td>
-                                <td>Warehouse 01</td>
-                                <td>04</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><img src="./imgs/black-w-chair.png" alt="black-w-chair.png"></td>
-                                <td>Dining Chair</td>
-                                <td>#119204</td>
-                                <td>Warehouse 02</td>
-                                <td>08</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><img src="./imgs/color-chair.png" alt="color-chair.png"></td>
-                                <td>Dining Chair</td>
-                                <td>#787003</td>
-                                <td>Warehouse 03</td>
-                                <td>16</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                    <div class="product-summary">
-                        <img src="./imgs/Frame 34322-pie.png" alt="product summary chart" class="product-summary-img">
-                    </div>
-                </div>
-                </div>
-            <!-- <aside class="product-summary">
-                <div class="product-summary-content">
-                    <h3>Product Summary</h3>
-                    <div class="progress-circle">
-                        <p>90%</p>
-                    </div>
-                </div>
-                
-            </aside> -->
-         
-    <!-- </main> -->
-    </div>
-    <!-- </div> -->
-</body>
+      </div>
+    </section>
+  </body>
 </html>

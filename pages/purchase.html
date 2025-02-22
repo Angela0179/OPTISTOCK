@@ -31,11 +31,19 @@
   </head>
   <body>
     <div class="container">
-      <aside class="sidebar">
+      <label >
+                <input type="checkbox" id="harm" style="color: white; ">
+                <div class="toggle">
+                  <span class="top_line common"></span>
+                   <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
+      <aside class="sidebar" id="mysidebar">
         <div class="sidebar-top">
+         
           <header class="sidebar-header">
-            <div class="welcome-block">
-              <div class="sidebar-logo">
+           <div class="welcome-block">
+             <div class="sidebar-logo">
                 <img src="/images/logo.png" alt="logo" />
               </div>
               <div class="sidebar-name">
@@ -109,7 +117,9 @@
                 </ul>
               </nav>
            </div>
+           </label>
           </header>
+           </label>
         </div>
       </aside>
     </div>
@@ -118,11 +128,8 @@
         <div class="purchases">
         <h1>Purchases</h1>
       </div>
-       <div class="bars">
-        <button class="bar menu-icon" type="button">
-          <i id="barz" class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+       
+     
     </div>
 
     </section>
@@ -211,7 +218,7 @@
       </div>
     </section>
     <section class="mainpurchase-table">
-      <div class="maintable">
+      <div class="maintable" id="desktop_table">
         <table>
   <tr>
     <th><input type="checkbox" id="checkbox" name="checkbox"></th>
@@ -341,8 +348,99 @@
 </table>
       </div>
     </section>
+      <section class="mainpurchase-table">
+      <div class="maintable" id="mobile_table">
+        <table>
+  <tr>
+    <th>Product</th>
+    <th>Price</th>
+    <th>Status</th>
+   <th>Payment</th>
+    <th>Action</th>
+  </tr>
+       <tr>
+   <td><img src="/images/table.jpeg" alt=""> Rounded Table</td>
+   <td>NG515,000</td>
+    <td><button id="Recieved"> Recieved</button></td>
+  <td><button id="paid">Paid</button></td>
+     <td><span class="mdi--delete-outline"></span></td>
+    
+  </tr>
+       <tr>
+   <td><img src="/images/sofa.jpeg" alt="">Nova Creamy Sofa</td>
+   <td>NG180,000</td>
+    <td><button id="ordered">Ordered</button></td>
+    <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+    <tr>
+    <td><img src="/images/bed.jpeg" alt="">Bed Frame</td>
+      <td>NG425000</td>
+   <td><button id="ordered">Ordered</button></td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    
+    <td><img src="/images/chair.jpeg" alt="">Ancient Chair</td>
+     <td>NG1,200,000</td>
+    <td><button id="pending">Pending</button></td>
+   <td><button id="partial">Partial</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   
+    <td><img src="/images/seat.jpeg" alt="">Pashe Dinning Chair</td>
+    <td>NG 89000</td>
+  <td><button id="Recieved">Recieved</button></td>
+   <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+   
+    <td><img src="/images/sit.jpeg" alt="">Mordern Arm Chair</td>
+    <td>NG1,100,000</td>
+  <td><button id="pending">Pending</button></td>
+   <td><button id="due">Due</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+  
+    <td><img src="/images/long chair.jpeg" alt="">Cushion Chair</td>
+        <td>NG1,000,000</td>
+  <td><button id="Recieved">Recieved</button></td>
+  <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+      <tr>
+    
+    <td><img src="/images/stool.jpeg" alt="">Surllivian Ancient Table</td>
+     <td>NG66000</td>
+   <td><button id="Recieved">Recieved</button></td>
+   <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+        <tr>
+    
+    <td><img src="/images/stickchair.jpeg" alt="">Leather Dinning Chair</td>
+       <td>NG90000</td>
+   <td><button id="pending">Pending</button></td>
+    <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+          <tr>
+   </td>
+    <td><img src="/images/sidestool.jpeg" alt="">Square Oak Coffe Table</td>
+      <td>NG285000</td>
+    <td><button id="Recieved">Pending</button></td>
+   <td><button id="paid">Paid</button></td>
+    <td><span class="mdi--delete-outline"></span></td>
+  </tr>
+  </table>
+    </div>
+      </section>
      <section class="filter">
-      <div class="mainfilter1">
+      <div class="mainfilter1" id="mobile_counter">
         <div class="foot">
           <h5>Showing 10 entities</h5>
         </div>
@@ -352,6 +450,16 @@
           <a href="#">3</a>
           <a href="#"><span class="dashicons--arrow-right-alt2"></span></a>
         </div>
+      </div>
+     </section>
+         <section class="filter">
+      <div class="mainfilter1" id="bottom_nav">
+        <div class="foot"><a href="#"><span class="material-symbols--dashboard-outline-rounded"></span></a>
+      </div>
+        <div class="foot"><a href="#"><span class="mdi--trolley"></span></a>
+      </div>
+      <div class="foot"><a href="#"><span class="bx--purchase-tag"></span></a></div>
+            <div class="foot"><a href="#"><span class="streamline--transfer-van"></span></a></div>
       </div>
      </section>
      <script src="main.js"></script>
