@@ -29,32 +29,35 @@
           </div>
           <!-- <h1>Hello Again!</h1>
           <h3>Welcome Back</h3> -->
-          <form>
+          <div id="error"></div>
+          <form id="form" action="/dashboard.html">
             <div class="input-field">
               <input
                 type="text"
                 name="firstname"
-                id=""
+                id="name"
                 placeholder=""
                 required
               />
-              <label for="">User Name</label>
+              <label for="name">User Name</label>
             </div>
             <div class="input-field">
               <input
                 type="password"
                 name="password"
-                id=""
+                id="password"
                 placeholder=""
                 required
               />
-              <label for="">Password</label>
+              <label for="password">Password</label>
             </div>
-            <!-- </form> -->
+
             <h5>
               <a href="/pages/forgot_password.html">Forgot Password ? </a>
             </h5>
-            <a href="/dashboard.html"><button type="submit">Login</button></a>
+            <a href="/dashboard.html"
+              ><button type="submit" id="btn-login">Login</button></a
+            >
           </form>
           <h6>
             Don't have an account?<span
