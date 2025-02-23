@@ -35,6 +35,8 @@
                 type="text"
                 name="firstname"
                 id="name"
+                pattern="[A-Z ]{8,}"
+                title="ONLY CAPITAL LETTERS"
                 placeholder=""
                 required
               />
@@ -45,6 +47,8 @@
                 type="email"
                 name="email"
                 id="email"
+                pattern="[a-z@. ]{8,}"
+                title="put in your email adress"
                 placeholder=""
                 required
               />
@@ -56,6 +60,8 @@
                 type="password"
                 name="password"
                 id="password"
+                title="Enter a 6 number password"
+                pattern="[0-9]{6}"
                 placeholder=""
                 required
               />

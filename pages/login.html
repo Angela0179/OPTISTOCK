@@ -36,7 +36,9 @@
                 type="text"
                 name="firstname"
                 id="name"
-                placeholder=""
+                pattern="[A-Z ]{8,}"
+                title="ONLY CAPITAL LETTERS"
+                placeholder=" "
                 required
               />
               <label for="name">User Name</label>
@@ -46,6 +48,8 @@
                 type="password"
                 name="password"
                 id="password"
+                title="Enter a 6 number password"
+                pattern="[0-9]{6}"
                 placeholder=""
                 required
               />
