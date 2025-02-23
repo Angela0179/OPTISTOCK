@@ -70,7 +70,7 @@ td {
 }
 /*aside*/
 aside {
-  width: 20%;
+  width: 30%;
   height: 100%;
 
   padding: 1rem;
@@ -86,9 +86,10 @@ aside {
   padding-block: 0.1rem;
   padding-bottom: 5rem;
   overflow: hidden;
-  width: 20%;
-  max-width: 20.563rem;
+  width: 30%;
+  max-width: 23.563rem;
   min-width: 19rem;
+  border-top-left-radius: 10px;
   /* z-index: 1; */
   padding: 1rem;
   float: right;
@@ -146,21 +147,21 @@ aside {
   color: var(--text-color2);
   font-family: "Montserrat", serif;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 17.07px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   align-items: center;
-  padding: 6px 30px 2px 15px;
+  padding: 6px 30px 6px 15px;
   border-radius: 6px;
 }
 .sidebar-nav li {
   list-style-type: none;
   width: Fixed (173px) px;
   height: Fixed (38px) px;
-  padding: 6px 12px 6px 12px;
+  padding: 8px 12px 6px 12px;
   gap: 5px;
   border-radius: 10px;
   opacity: 0px;

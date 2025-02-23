@@ -68,3 +68,4 @@ const handleBackspace = (inputNumber, event) => {
     verifyBtn.disabled = !allInputFilled;
   }
 };
+// input field validation*/
