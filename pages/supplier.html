@@ -21,8 +21,15 @@
     <link rel="stylesheet" href="/CSS/purchases.css" />
     <title>Supplier</title>
   </head>
-  <body>
+  <body id="mybody">
     <div class="container">
+       <label >
+                <input type="checkbox" id="harm" style="color: white; ">
+                <div class="toggle">
+                  <span class="top_line common"></span>
+                   <span class="middle_line common"></span>
+                    <span class="bottom_line common"></span>
+                </div>
       <aside class="sidebar">
         <div class="sidebar-top">
           <header class="sidebar-header">
@@ -116,11 +123,11 @@
 
     </section>
     <section class="main-content">
-        <div class="top-nav">
+        <div class="top-nav" id="topnav">
                <div class="sec-name">
                 <h1>Suppliers</h1>
                </div>
-              <div class="inputfield">
+              <div class="inputfield" id="inputfield">
                  
                 <input type="search" id="search"  name="search" placeholder="Search  " >
                 <span class="material-symbols-outlined">
@@ -149,7 +156,7 @@
           </div>
     </section>
     <section class="maincontent">
-  <div class="mainintro">
+  <div class="mainintro" id="main_intro">
         <div class="intro">
         <h3>All Categories</h3>
       </div>
@@ -185,8 +192,24 @@
             </div>
       </div>
     </section>
+    <section>
+        <div class="joint">
+                  <div class="inputfield1">
+                 <span class="system-uicons--filtering"></span>
+                <input type="search" id="filter"  name="NEW" placeholder="NEW  ">
+                
+               
+              </div>
+               <div class="inputfield2">
+                <span class="material-symbols-light--add-rounded"></span>
+                <input type="search" id="create"  name="Upload" placeholder="UPLOAD  " >
+                
+               
+              </div>
+            </div>
+    </section>
     <section class="mainpurchase-table">
-      <div class="maintable">
+      <div class="maintable" id="desktop_table">
         <table>
   <tr>
     <th><input type="checkbox" id="checkbox" name="checkbox"></th>
@@ -313,8 +336,107 @@
 </table>
       </div>
     </section>
+      <section class="mainpurchase-table">
+      <div class="maintable" id="mobile_table1">
+      <div class="supplier_detail">
+          <div class="supplier_name">
+          <h1>CherryWood</h1>
+         </div>
+        <div class="suplier_id">
+          <div class="id">
+            <h5><span>Supplier ID</span></h5>
+            <h4>Sur001</h4>
+          </div>
+          <div class="catergory">
+            <h5><span>Catergory</span></h5>
+            <h4>Chair</h4>
+          </div>
+          <div class="location">
+            <h5><span>Location</span></h5>
+            <h4>Jos</h4>
+          </div>
+        </div>
+      </div>
+      <div class="supplier_detail">
+          <div class="supplier_name">
+          <h1 class="supply">JK Ltd</h1>
+         </div>
+        <div class="suplier_id">
+          <div class="id">
+            <h5><span>Supplier ID</span></h5>
+            <h4>Sur003</h4>
+          </div>
+          <div class="catergory">
+            <h5><span>Catergory</span></h5>
+            <h4>sofa</h4>
+          </div>
+          <div class="location">
+            <h5><span>Location</span></h5>
+            <h4>Uk</h4>
+          </div>
+        </div>
+      </div>
+       <div class="supplier_detail">
+          <div class="supplier_name">
+          <h1>Fancy Foams</h1>
+         </div>
+        <div class="suplier_id">
+          <div class="id">
+            <h5><span>Supplier ID</span></h5>
+            <h4>Sur004</h4>
+          </div>
+          <div class="catergory">
+            <h5><span>Catergory</span></h5>
+            <h4>Beds</h4>
+          </div>
+          <div class="location">
+            <h5><span>Location</span></h5>
+            <h4>Italy</h4>
+          </div>
+        </div>
+      </div>
+       <div class="supplier_detail">
+          <div class="supplier_name">
+          <h1>Lollywood</h1>
+         </div>
+        <div class="suplier_id">
+          <div class="id">
+            <h5><span>Supplier ID</span></h5>
+            <h4>Sur005</h4>
+          </div>
+          <div class="catergory">
+            <h5><span>Catergory</span></h5>
+            <h4>Tables</h4>
+          </div>
+          <div class="location">
+            <h5><span>Location</span></h5>
+            <h4>Asaba</h4>
+          </div>
+        </div>
+      </div>
+       <div class="supplier_detail">
+          <div class="supplier_name">
+          <h1 class="supply">SJ coin</h1>
+         </div>
+        <div class="suplier_id">
+          <div class="id">
+            <h5><span>Supplier ID</span></h5>
+            <h4>Sur006</h4>
+          </div>
+          <div class="catergory">
+            <h5><span>Catergory</span></h5>
+            <h4>Bedframes</h4>
+          </div>
+          <div class="location">
+            <h5><span>Location</span></h5>
+            <h4>Kaduna</h4>
+          </div>
+        </div>
+      </div>
+      </div>
+      </section>
      <section class="filter">
-      <div class="mainfilter1">
+      <div class="mainfilter1" id="mobile_counter">
         <div class="foot">
           <h5>Showing 10 entities</h5>
         </div>
@@ -327,6 +449,16 @@
           <a href="#">4</a>
           <a href="#"><span class="dashicons--arrow-right-alt2"></span></a>
         </div>
+      </div>
+     </section>
+            <section class="filter">
+      <div class="mainfilter1" id="bottom_nav1">
+        <div class="foot"><a href="#"><span class="material-symbols--dashboard-outline-rounded"></span></a>
+      </div>
+        <div class="foot"><a href="#"><span class="mdi--trolley"></span></a>
+      </div>
+      <div class="foot"><a href="#"><span class="bx--purchase-tag"></span></a></div>
+            <div class="foot"><a href="#"><span class="streamline--transfer-van"></span></a></div>
       </div>
      </section>
      <script src="main.js"></script>
