@@ -43,7 +43,7 @@
             We have sent a code to your registered email address
             mathew.west@outlook.com.
           </h4>
-          <form class="form">
+          <form class="form" action="/pages/success.html">
             <div class="inputContainer">
               <input
                 type="text"
@@ -85,10 +85,11 @@
                 onkeydown="handleBackspace(5, event)"
               />
             </div>
+
+            <a id="btns" href="/pages/success.html">
+              <button class="verifyBtn" type="submit">Verify</button></a
+            >
           </form>
-          <button class="verifyBtn" type="submit">
-            <a id="btns" href="/pages/success.html">Verify</a>
-          </button>
         </div>
       </div>
     </section>
