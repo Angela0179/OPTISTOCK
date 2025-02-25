@@ -45,9 +45,9 @@ nav{
   /* ul li a:hover{
     background: #7653DC;
   } */
-  ul li a:hover{
-    background: #00000066;
-    padding: 1.5px 8px;
+  ul li a:hover {
+    background: #7653dc;;
+    padding: 4.5px 8px;
     width: 153px;
     /* height: 28px; */
     border-radius: 10px;
@@ -115,8 +115,11 @@ section{
 }
 
 .products-table{
-    border-spacing: 35px;
+    /* border-spacing: 35px; */
+    max-width: 100%;
+    width: 95%;
     text-align: center;
+    border-collapse: collapse;
 }
 #input-2{
     width: 26vw;
@@ -158,13 +161,19 @@ cursor: pointer;
     height: auto;
 } */
 
-/*this styliong is for category.html*/
+/*this styling is for category.html*/
 .Category-table{
-    border-spacing: 1.8rem;
+    /* border-spacing: 1.8rem; */
     /* border: 1px solid #A19E9E; */
     width: 68vw;
     text-align: center;
+    border-collapse: collapse;
     /* margin-left: -2rem; */
+}
+.Category-table tr, th, td{
+  border-bottom: 1px solid #A19E9E;
+  padding: 1rem 0;
+  
 }
 /* table tr th td{
     border: 1px solid #A19E9E;
@@ -181,15 +190,21 @@ cursor: pointer;
     background-color: #DCFEEC;
     color: #14AE5C;
     border-radius: 5px;
-    width: 59px;
-    height: 35px;
+    display: inline-block;
+    border: none;
+    margin-top: 0.7rem;
+    padding: 0.8rem;
+    /* height: 35px; */
 
 }
 .inactive{
     color: #F24822;
     background: #FDE9E5;
     border-radius: 5px;
-    width: 70px;
+    display: inline-block;
+    border: none;
+    margin-top: 0.7rem;
+    padding: 0.8rem;
 
 }
 
@@ -406,9 +421,9 @@ cursor: pointer;
     /* margin-right: 2rem; */
     
 }
-input[id=userName]{
-    /* margin-right: 2rem;  */
-}
+/* input[id=userName]{
+    margin-right: 2rem; 
+} */
  input[id=emailAddress]{
     max-width: 100%;
     width: 45%;
@@ -540,14 +555,17 @@ table{
       border-collapse: collapse;
       background: #FFFFFF;
       border-radius: 10px;
-      padding: 10px 8px;
+      padding: 10px;
       /* margin-bottom: 5rem; */
     }
-    th, td{
-      padding: 7px;
-      /* margin: 0 2rem; */
-      border-bottom: 1px solid #B0AFAF;
+    .mobile-main-table table{
+      padding: 0 2rem;
     }
+    /* th, td{
+      padding: 7px;
+      margin: 0 2rem;
+      border-bottom: 1px solid #B0AFAF;
+    } */
 
     /*this mobile screen is for category.html*/
     .active-mobile{
@@ -555,24 +573,20 @@ table{
       color: #14AE5C;
       border-radius: 5px;
       border: none;
-      padding: 5px 10px;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-      /* margin-top: 0.8rem; */
-      display: inline-block;
-      /* align-items: center; */
-      /* padding: 2rem; */
-      /* height: 55px; */
+      padding: 7px 10px;
+      margin-top: 1.2rem;
+      display:inline-block;
+      
   }
   .inactive-mobile{
       color: #F24822;
       background: #FDE9E5;
       display: inline-block;
       border-radius: 5px;
+      padding: 7px 10px;
       border: none;
-      /* margin-top: 0.8rem; */
-      /* width: 70px; */
+      margin-top: 1.2rem;
+      
   
   }
 
