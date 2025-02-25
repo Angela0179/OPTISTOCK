@@ -72,6 +72,9 @@ nav{
     font-weight: 600; */
    
 }
+.bold-weight{
+  font-weight: 600;
+}
 input[type =text]{
     width: 23rem;
     height: 2.5rem;
@@ -365,7 +368,7 @@ cursor: pointer;
 /*this styling is for settings.html*/
 .settings-div{
     display: grid;
-    grid-template-rows: 0.1fr 1fr 1fr;
+    /* grid-template-rows: 0.1fr 1fr 1fr; */
     grid-template-areas: 
     "heading12"
     "content11"
@@ -377,7 +380,8 @@ cursor: pointer;
 .profile-set{
     grid-area: content11;
     background: #FFFFFF;
-    width: 1000px;
+    max-width: 100%;
+    width: 95%;
     height: 326px;
     border-radius: 20px;
     margin: auto;
@@ -387,7 +391,8 @@ cursor: pointer;
 .input-flex1{
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    max-width: 100%;
+    width: 80%;
     margin: auto;
     margin-bottom: 2.2rem;
 
@@ -395,21 +400,23 @@ cursor: pointer;
 .input-flex2{
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    max-width: 100%;
+    width: 80%;
     margin: auto;
     /* margin-right: 2rem; */
     
 }
 input[id=userName]{
-    margin-right: 2rem; 
+    /* margin-right: 2rem;  */
 }
  input[id=emailAddress]{
-    width: 367px;
+    max-width: 100%;
+    width: 45%;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #757575;
     padding: 0 16px;
-    margin-left: 2rem;
+    margin-left: 1.7rem;
 }
 .btn-safe-changes{
     background: #4F41C2;
@@ -449,6 +456,9 @@ input[id="passWord"]{
 .mobile-container-setting{
   display: none;
 }
+.foot-img{
+  display: none;
+}
 *{
   /* outline: 1px solid red; */
   /* max-width: 100% !important; */
@@ -482,7 +492,7 @@ table{
     }
     .mobile-container{
       display: block;
-      height: 150vh;
+      max-height: 150vh;
       background: #E8E7E7;
     }
     .mobile-header{
@@ -501,10 +511,7 @@ table{
     .mobile-header i{
       font-size: 20px;
     }
-    /* .mobile-container{
-      
-
-    } */
+   
     .mobile-container .mobile-main .mobile-input{
       position: relative;
       display: flex;
@@ -665,6 +672,15 @@ table{
   margin-top: 1.5rem;
   cursor: pointer;
 }
+.foot-img{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  
+}
+
+}
 /*styling for tablet responsiveness*/
 @media(min-width:770px) and (max-width:1024px){
     main{
@@ -743,5 +759,16 @@ table{
      .best-selling th, td{
       padding-bottom: 2rem;
      }
-}
+
+     /*tablet screen for settings.html*/
+     .setting-container-tablet{
+      max-width: 100%;
+      width: 95%;
+     }
+     .settings-div{
+      max-width: 100%;
+      width: 95vw;
+      /* margin: 0 auto; */
+      flex-grow: 1;
+     }
 }
