@@ -773,6 +773,7 @@ table td #partial {
 #bottom_nav1 {
   display: none;
 }
+
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 3rem;
@@ -1844,11 +1845,11 @@ table td #partial {
     padding: 10px;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 10px;
     margin-left: 2rem;
     margin-right: 2rem;
     width: Fixed (1, 107px) px;
-    height: 7vh;
+    height: 10vh;
     background-color: white;
     margin-bottom: 0.1px;
     border-bottom-left-radius: 12px;
@@ -1863,10 +1864,11 @@ table td #partial {
     display: flex;
     margin-left: 0.1px;
     margin-right: 0.1px;
+    height: 15vh;
   }
   #bottom_nav1 {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     margin-left: 0.1px;
     margin-right: 0.1px;
@@ -1996,5 +1998,17 @@ table td #partial {
   }
   #main_intro {
     display: none;
+  }
+  #bottom_nav .foot {
+    padding: 1px;
+    gap: 5px;
+    padding-top: 2.5rem;
+    padding-bottom: 0.9rem;
+  }
+
+  #bottom_nav .foot h1 {
+    color: #4f41c2;
+    font-weight: 600;
+    font-size: 1.4rem;
   }
 }
