@@ -245,7 +245,10 @@ cursor: pointer;
     "sidebar best";
     background: #E8E7E7;
     height: 1100px;
-    
+    max-width: 100%;
+    width: 100%;
+    /* min-width: 0;
+    flex: 1; */
 }
 
 .overview{
@@ -254,13 +257,14 @@ cursor: pointer;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "content content2";
     /* justify-content: space-between; */
-    width: 1000px;
+    width: 100%;
     margin: auto;
+    min-width: 0;
     /* background: #FFFFFF; */
 }
-.overview-table1{
+/* .overview-table1{
     border-spacing: 2rem;
-}
+} */
 .revenue{
     color: #DBA362;
 
@@ -269,26 +273,47 @@ cursor: pointer;
     grid-area: content;
     background: #FFFFFF;
     border-spacing: 1.5rem;
-    width: 480px;
+    width: 32vw;
     margin: auto;
     height: 200px;
     border-radius: 8px;
     font-size: 0.8rem;
     /* margin-right: 2rem; */
 }
+.overview-pvalue{
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: -1.5rem; */
+}
+.caption-overview{
+  padding-left: 1rem;
+}
+.sales{
+  color: #845EBC;
+
+}
 .best-selling-category{
     grid-area: content2;
     background: #FFFFFF;
     border-spacing: 1.5rem;
-    width: 475px;
+    width: 32vw;
     margin: auto;
     height: 200px;
     border-radius: 8px;
     font-size: 0.8rem;
 }
-.best-selling-cate-table1{
-    border-spacing: 1.2rem;
-    text-align: center;
+
+/* .container > table .best-selling-cate-table1 th, td{
+ padding: 0 2rem;
+} */
+ .best-selling-category01{
+  display: flex;
+  justify-content: space-around;
+ }
+.caption-bsc{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem ;
 }
 .report-container span{
     color: #10A760;
@@ -322,15 +347,19 @@ cursor: pointer;
     background: #FFFFFF;
     width: 975px;
     margin: auto;
-    height: 306px;
+    height: 320px;
     margin-top: -1.5rem;
     border-radius: 8px;
     /* border-spacing: 5rem; */
-    text-align: center;
+    /* text-align: left; */
 }
-.best-selling-table3{
-    border-spacing: 2rem;
+.best-selling001{
+  text-align: left;
 }
+.left-align{
+  text-align: center;
+}
+
 
 
 /*this styling is for settings.html*/
@@ -414,38 +443,244 @@ input[id="passWord"]{
     padding: 0 16px;
     margin-left: 2rem;
 }
-
+.mobile-container{
+  display: none;
+}
+.mobile-container-setting{
+  display: none;
+}
+*{
+  /* outline: 1px solid red; */
+  /* max-width: 100% !important; */
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+/* img{
+  max-width: 100%;
+  height: auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+} */
 /*styling for mobile responsiveness*/
 @media(max-width:769px){
     main{
-        background: gold;
+        /* background: gold; */
+        /* max-height: 100vh; */
+        width: 100%;
+        max-width: 100%;
+    }
+    html{
+      font-size: 68%;
     }
     .sidebar{
         display: none;
     }
+    .container{
+      display: none;
+    }
+    .mobile-container{
+      display: block;
+      height: 150vh;
+      background: #E8E7E7;
+    }
+    .mobile-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 20px;
+      background: #6943D8;
+      margin-bottom: 2rem;
+    }
+    .mobile-header h3{
+      margin: 0;
+      flex: 1;
+      text-align: center;
+    }
+    .mobile-header i{
+      font-size: 20px;
+    }
+    /* .mobile-container{
+      
+
+    } */
+    .mobile-container .mobile-main .mobile-input{
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 95%;
+      margin: auto;
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+    .mobile-container .mobile-main .mobile-input input{
+      width: 100%;
+      padding: 10px 30px 10px 10px;
+      /* margin-bottom: 2rem; */
+    }
+    .fa-magnifying-glass{
+      position: absolute;
+      right: 2rem;
+      cursor: pointer;
+    }
+    /* .table-mobile-products{
+      background: gold;
+    } */
+    table{
+      width: 95%;
+      margin: auto;
+      border-collapse: collapse;
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding: 10px 8px;
+      /* margin-bottom: 5rem; */
+    }
+    th, td{
+      padding: 7px;
+      /* margin: 0 2rem; */
+      border-bottom: 1px solid #B0AFAF;
+    }
+
+    /*this mobile screen is for category.html*/
+    .active-mobile{
+      background-color: #DCFEEC;
+      color: #14AE5C;
+      border-radius: 5px;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      /* margin-top: 0.8rem; */
+      display: inline-block;
+      /* align-items: center; */
+      /* padding: 2rem; */
+      /* height: 55px; */
+  }
+  .inactive-mobile{
+      color: #F24822;
+      background: #FDE9E5;
+      display: inline-block;
+      border-radius: 5px;
+      border: none;
+      /* margin-top: 0.8rem; */
+      /* width: 70px; */
+  
+  }
+
+  /*this mobile styling is for reports.html*/
+  .main-reports-imgs{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin: auto;
+   
+  }
+  .margin-bottom{
+    margin-bottom: 1.5rem;
+  }
+
+  /*mobile styling for settings.html*/
+  .mobile-container-setting{
+    display: block;
+    height: 150vh;
+    background: #6943D8;
+  
+}
+.setting-mobile-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-settings-h3{
+  position: relative;
+}
+.fa-arrow-left{
+  position: absolute;
+  left: -17.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  
+}
+.profile-setting{
+  background: #FFFFFF;
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2rem 0;
+}
+.pro-sett{
+  text-align: left;
+  font-size: 1.5rem;
+}
+#userName{
+  background: #C1C7C46B;
+  border: none;
+  width: 78vw;
+  margin: auto;
+  padding: 2rem 2rem 2rem 2.8rem;
+}
+.flexxx{
+  margin-bottom: 2rem;
+}
+.trial{
+  position: relative;
+  /* width: 99%; */
+  margin: auto;
 }
 
+.trial img{
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
+  /* padding-left: 1rem;
+  padding-right: 2rem; */
+}
+.btn-settings{
+  color: #E5E2E2;
+  background: #4F41C2;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  width: 40%;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-setting2{
+  color: #E5E2E2;
+  background: #4F41C2;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  width: 35%;
+  font-weight: 600;
+  margin-left: 12rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
 /*styling for tablet responsiveness*/
 @media(min-width:770px) and (max-width:1024px){
     main{
-        background: palegreen;
+        /* background: palegreen; */
         /* margin-bottom: 2rem; */
     max-width: 100%;
-    width: 72vw;
+    width: 100%;
     flex-grow: 1;
     }
     html{
         font-size: 78%;
       }
       .container{
-        /* width: 50%; */
+        width: 100%;
         max-width: 100%;
         overflow-x:visible;
-      }
-      .header{
-        /* max-width: 100%;
-    width: 65vw;
-    flex-grow: 1; */
       }
       .header input{
         width: 70%;
@@ -453,9 +688,6 @@ input[id="passWord"]{
       .header .div-francis img{
         width: 72%;
       }
-      /* .sidebar nav{
-        width: 10%;
-      } */
        #products{
         max-width: 100%;
     width: 67vw;
@@ -474,62 +706,42 @@ input[id="passWord"]{
         text-align: left;
         
       }
-      /* th:nth-child(1), td:nth-child(1){
-        width: 17%;
-      }
-      th:nth-child(2), td:nth-child(2){
-        width: 14%;
-      }
-      th:nth-child(3), td:nth-child(3){
-        width:14%;
-      }
-      th:nth-child(4), td:nth-child(4){
-        width: 17%;
-      } 
-      th:nth-child(3), td:nth-child(3){
-        width:12%;
-      }
-      th:nth-child(4), td:nth-child(4){
-        width: 12%;
-      }  */
-      /* th:nth-child(1), td:nth-child(1){
-        width: 20%;
-      }
-      th:nth-child(2), td:nth-child(2){
-        width: 15%;
-      }
-      th:nth-child(3), td:nth-child(3){
-        width:15%;
-      }
-      th:nth-child(4), td:nth-child(4){
-        width: 20%;
-      } */
-     /* table{
-        display: block;
-        width:100%;
+     
+     /*tablet screen for reports.html*/
+     .report-container{
+      max-width: 1024%;
+      width: 95%;
+      margin: 0 auto;
+      flex-grow: 1;
      }
-     thead{
-        display: none;
+     .overview{
+      max-width: 100%;
+      width: 100%;
+      flex-grow: 1;
      }
-     tbody, tr, td {
-        display: block;
-        width: 100%;
+     .overview-price, .overview-price02{
+      width: 90%;
+      max-width: 100%;
+      padding: 0 0.8rem;
      }
-     tr{
-        margin-right: 10px;
-        border: 1px solid #ddd;
-        padding: 10px;
+     
+     .profits-revenue img{
+      width: 93%;
+      height: 50vh;
+      max-width: 100%;
+      /* flex-grow: 1; */
+      margin-left: 2rem;
+      /* margin: auto; */
      }
-     td{
-        text-align: right;
-        position: relative;
-        /* padding-left: 50%; */
+    
+     .best-selling{
+      width: 95%;
+      max-width: 100%;
+      /* margin: auto; */
+      padding: 0.8rem;
      }
-     td::before{
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-        text-align: left;
-     } */
+     .best-selling th, td{
+      padding-bottom: 2rem;
+     }
+}
 }
