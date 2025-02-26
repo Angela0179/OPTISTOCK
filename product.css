@@ -45,13 +45,22 @@ nav{
   /* ul li a:hover{
     background: #7653DC;
   } */
-  ul li a:hover {
+  /* .active {
+    background: #7653dc;
+    padding: 2.5px 8px;
+    width: 153px;
+    height: 28px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  } */
+  ul li a:hover, .active {
     background: #7653dc;;
     padding: 4.5px 8px;
     width: 153px;
     /* height: 28px; */
     border-radius: 10px;
   }
+  
   hr{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -186,7 +195,7 @@ cursor: pointer;
     padding-left: 8rem;
 } */
 
-.active{
+.activate{
     background-color: #DCFEEC;
     color: #14AE5C;
     border-radius: 5px;

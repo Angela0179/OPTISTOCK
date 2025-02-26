@@ -21,11 +21,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu-bar" id="menu-Links">
-        <nav>
+      <!--menu icon for mobile-->
+      <!-- <div class="menu-icon" id="menuIcon">
+          <i class="fa-solid fa-bars"></i>
+      </div> -->
+      <div  class="menu-bar">
+        <nav class="show" id="menu-links">
           <img src="./imgs/logo-img.png" alt="logo-img.png" />
           <ul>
-            <li class="dashboard1"><a href="dashboard.html"><img src="./imgs/Dashboard Layout.png"/>Dashboard</a></li>
+            <li><a href="dashboard.html"><img src="./imgs/Dashboard Layout.png"/>Dashboard</a></li>
             <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png"/>Products</a></li>
             <li><a href="category.html"><img src="./imgs/Categorize.png" alt="Categorize.png"/>Categories</a></li>
             <li><a href="./pages/order.html"><img src="./imgs/Purchase Order.png"alt="Purchase Order.png"/>Orders</a> </li>
@@ -48,7 +52,7 @@
         </div>
         <div class="div-input">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="search" onclick="this.style.outline='1px solid #6943d8'" />
         </div>
         <div class="div-francis">
           <img src="./imgs/Frame 34309-francis.png" alt="-francis.png" />
@@ -237,13 +241,13 @@
                 <td>50</td>
               </tr>
 
-              <tr>
+              <!-- <tr>
                 <td> <img src="./imgs/black-w-chair.png" alt="black-w-chair.png" /></td>
                 <td>Dinning Chair</td>
                 <td>NGN 25,000</td>
                 <td>100</td>
                 <td>340</td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
         </div>
@@ -353,7 +357,7 @@
                   <td>Bed Frame</td>
                   <td>#279101</td>
                   <td>Warehouse 01</td>
-                  <td>04</td>
+                  <td class="center-align">04</td>
                 </tr>
                 <tr>
                   <td colspan="2">
@@ -365,7 +369,7 @@
                   <td>Dining Chair</td>
                   <td>#119204</td>
                   <td>Warehouse 02</td>
-                  <td>08</td>
+                  <td class="center-align">08</td>
                 </tr>
                 <tr>
                   <td colspan="2">
@@ -374,7 +378,7 @@
                   <td>Dining Chair</td>
                   <td>#787003</td>
                   <td>Warehouse 03</td>
-                  <td>16</td>
+                  <td class="center-align">16</td>
                 </tr>
               </tbody>
             </table>
@@ -392,10 +396,10 @@
     </div>
      <!--this here is for mobile screen-->
      <div class="mobile-container">
-      <header class="mobile-header">
+      <header class="mobile-header bar menu-icon">
         <h3>Dashboard</h3>
-        <i class="fa-solid fa-bars"></i>
-    </header>
+        <i class="fa-solid fa-bars" id="bars"></i>
+     </header>
     <main class="mobile-main">
 
       <h3 class="invent-sum">Inventary Summary</h3>
@@ -584,7 +588,7 @@
       <a href="./pages/purchase.html"><img src="./imgs/Frame 427320662.png" alt="Frame 427320662.png"></a>
     </div>
 
-    <script src="app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 

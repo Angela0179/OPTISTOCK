@@ -67,13 +67,7 @@ input[type =text]{
     padding: 0rem 1rem 0 1rem;
     /* position: relative; */
   }
-  /*.fa-magnifying-glass{
-    position: absolute;
-     max-width: 23rem;
-    left: 60rem;
-    top: 2rem;
-    color: #757575; 
-  }*/
+
 /*styling for header ends here*/
 
 /*styling for main div starts here*/
@@ -131,6 +125,9 @@ table{
     border: 1px solid #757575;
     padding: 0rem 1rem 0 1rem;
 }
+span{
+  font-weight: 600;
+}
 .btn-cancel-product{
     color: #5E5C5C;
     font-size: 1rem;
@@ -141,6 +138,7 @@ table{
     width: 131px;
     height: 40px;
     margin-left: 20rem;
+    cursor: pointer;
 }
 .btn-save-product{
     background: #4F41C2;
@@ -154,6 +152,7 @@ table{
     margin-top: 5rem;
     margin-left: 1.5rem;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 .foot-img{
   display: flex;

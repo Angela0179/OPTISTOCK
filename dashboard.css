@@ -31,11 +31,8 @@ html {
   text-align: center;
   background: #faf8f8;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   align-items: center;
-  /* height: 70px; */
 }
 input[type="text"] {
   width: 23rem;
@@ -43,11 +40,9 @@ input[type="text"] {
   border-radius: 0.3rem;
   border: 1px solid #757575;
   padding: 0rem 1rem 0 1rem;
-  /* position: relative; */
 }
 .fa-magnifying-glass {
   position: absolute;
-  /* max-width: 23rem; */
   left: 55rem;
   top: 1.5rem;
   color: #757575;
@@ -63,11 +58,11 @@ input[type="text"] {
 nav {
   margin-top: 3rem;
   text-align: center;
-  /* position: fixed; */
 }
 nav ul {
   list-style-type: none;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #b0afaf;
@@ -78,18 +73,19 @@ nav ul li a {
 }
 
 nav ul li a img {
-  /* margin-bottom: 2.5rem; */
   margin-right: 0.8rem;
-  /* width: 1rem; */
 }
 nav ul li a .fa-gear {
   margin-right: 1rem;
 }
 hr {
-  margin-top: 2rem;
+  max-width: 100%;
+  width: 95%;
+  margin: auto;
   margin-bottom: 2rem;
+  margin-left: -0.8rem;
 }
-.dashboard1 {
+.active {
   background: #7653dc;
   padding: 2.5px 8px;
   width: 153px;
@@ -124,7 +120,8 @@ ul li a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   font-size: 0.9rem;
-  width: 85vw;
+  max-width: 100%;
+  width: 100%;
   margin: auto;
   /* margin-bottom: -3rem; */
 }
@@ -144,23 +141,23 @@ ul li a:hover {
 .bg-white {
   background: #ffffff;
   height: 8rem;
-  width: 194px;
+  width: 21.3%;
   border-radius: 0.63rem;
-  padding: 0.8rem 1.3rem;
+  padding: 0.9rem 1.9rem;
   
 }
 .activ-image1 {
   position: absolute;
   top: 0.6rem;
   /* bottom: 42.5rem; */
-  left: 10rem;
+  left: 11rem;
 }
 
 .activ-image {
   position: absolute;
   /* bottom: 0.3rem; */
   width: 20px;
-  left: 0.4rem;
+  left: 1.5rem;
   /* bottom: 20.6rem; */
 }
 .activ-text {
@@ -170,7 +167,7 @@ ul li a:hover {
   margin: 1rem 0;
 }
 span {
-  margin-left: 0.2rem;
+  margin-left: 0.8rem;
   color: #14ae5c;
   font-weight: 600;
   font-size: 0.8rem;
@@ -179,25 +176,22 @@ span {
   grid-area: content2;
   display: flex;
   justify-content: space-around;
-  width: 80vw;
+  max-width: 100%;
+  width: 100%;
   margin: auto;
   margin-top: -3rem;
+  margin-bottom: 0.5rem;
 }
 .frame34316-img {
-  /* width: 32vw; */
-  /* height: 342px; */
   margin-left: 1rem;
   margin-right: 1.6rem;
 }
 
 .top-selling-products {
-  /* grid-area: text2; */
   background: #ffffff;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
+  padding: 0 0.6rem;
   border-radius: 10px;
   width: 37vw;
-  height: 342px;
   margin: auto;
   font-size: 0.8rem;
 }
@@ -230,7 +224,7 @@ select {
   grid-area: content3;
   background-color: #ffffff;
   max-width: 100%;
-  width: 91%;
+  width: 96.9%;
   margin: auto;
   height: 350px;
   border-radius: 10px;
@@ -311,10 +305,13 @@ select {
   flex-wrap: wrap;
   font-size: 0.8rem;
   border: none;
+  max-width: 100%;
+  width: 100%;
 }
 .last-table {
   background-color: #ffffff;
-  width: 55%;
+  max-width: 70%;
+  width: 65%;
   height: 48vh;
   border-radius: 10px;
 }
@@ -334,8 +331,11 @@ select {
 }
 .container .stock-alert .stock-table .last-table table th,td {
   /* border-spacing: 22rem; */
-  padding-left: 2rem;
+  padding: 0.8rem;
   
+}
+.center-align{
+  text-align: center;
 }
 .mobile-header {
   display: none;
@@ -381,6 +381,10 @@ select {
     margin-bottom: 2rem;
     font-size: 1.5rem;
   }
+  .container .menu-bar .show{
+    display: flex;
+  }
+ 
   .invent-sum{
     margin-left: 2rem;
     margin-bottom: 1.5rem;
@@ -389,14 +393,21 @@ select {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
-    width: 97%;
+    width: 98%;
     margin: auto;
+    font-size: 0.78rem;
   }
   .bg-white{
-    margin-right: 1rem;
+    /* max-width: 100%;*/
+    width: 60%;
+     margin-left: 1rem;
   }
   .activ-image{
-    left: -0.1rem;
+    left: 1rem;
+    top: 4.5rem;
+  }
+  .activ-image1{
+    left: 9.5rem;
   }
   .top-selling-products-mobile{
     background: #FFFFFF;
@@ -617,9 +628,8 @@ select {
     left: 16rem;
     top: 36%;
     transform: translateY(-36%);
-    /* left: 38rem; */
   }
   .div-francis img {
     width: 20vw;
-  } */
+  } 
 }
