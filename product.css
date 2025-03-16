@@ -472,11 +472,11 @@ input[id="passWord"]{
       width: 45%;
       padding: 10px;
       z-index: 1000;
-      top: 30px;
+      top: 55px;
     }
     #menu-links.show{
       display: block;
-      background: #6943D8;
+      background:#100c2f;
     }
    
     .mobile-container .mobile-main .mobile-input{
@@ -566,9 +566,6 @@ input[id="passWord"]{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* max-width: 60%; */
-  /* width: 50%; */
-  /* margin: auto; */
 }
 .fa-arrow-left{
   position: absolute;
@@ -611,7 +608,6 @@ input[id="passWord"]{
 }
 .trial{
   position: relative;
-  /* width: 99%; */
   margin: auto;
 }
 
@@ -619,8 +615,6 @@ input[id="passWord"]{
   position: absolute;
   top: 1.2rem;
   left: 0.5rem;
-  /* padding-left: 1rem;
-  padding-right: 2rem; */
 }
 .btn-settings{
   color: #E5E2E2;

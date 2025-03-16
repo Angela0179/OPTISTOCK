@@ -367,11 +367,11 @@ select {
     width: 45%;
     padding: 10px;
     z-index: 1000;
-    top: 18px;
+    top: 50px;
   }
   #menu-links.show{
     display: block;
-    background: #6943D8;
+    background:#100c2f;
   }
   .invent-sum{
     margin-left: 2rem;
