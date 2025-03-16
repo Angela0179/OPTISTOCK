@@ -184,21 +184,44 @@
 
 <!--codes for my mobile screen-->
 <div class="mobile-container">
-    <header class="mobile-header">
+    <header class="mobile-header menu-icon">
         <h3>Products</h3>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" id="bars"></i>
     </header>
+
+    <div  class="menu-bar">
+        
+        <nav class="show" id="menu-links">
+          <img src="./imgs/logo-img.png" alt="logo-img.png" />
+          <ul>
+            <li><a href="dashboard.html"><img src="./imgs/Dashboard Layout.png"/>Dashboard</a></li>
+            <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png"/>Products</a></li>
+            <li><a href="category.html"><img src="./imgs/Categorize.png" alt="Categorize.png"/>Categories</a></li>
+            <li><a href="./pages/order.html"><img src="./imgs/Purchase Order.png"alt="Purchase Order.png"/>Orders</a> </li>
+            <li><a href="./pages/purchase.html"><img src="./imgs/Bill.png" alt="Bill.png" />Purchases</a></li>
+            <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png"alt="Fast Shipping.png"/>Transfer</a></li>
+            <li><a href="reports.html"><img src="./imgs/Graph Report.png"alt="Graph Report.png"/>Reports</a></li>
+            <li><a href="./pages/supplier.html" ><img src="./imgs/Supplier.png" alt="Supplier.png" />Supplies</a></li>
+            <li><a href="./pages/user.html"><img src="./imgs/Users.png" alt="/Users.png" />Users</a></li>
+            <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+
+            <hr>
+
+            <li><a href="#"><img src="./imgs/Logout.png" />Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+
     <main class="mobile-main">
         <div class="mobile-input">
             <input type="text" placeholder="search" id="search" onclick="this.style.outline='1px solid #6943d8'" >
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
-        <!-- <div class="table-mobile-products"> -->
         <table class="mobile-main-table">
             <thead>
                 <tr>
-                    <th>Product</th>
+                    <th class="table-imgs-product">Product</th>
                     <th></th>
                     <th>Product ID</th>
                     <th>Price</th>
@@ -208,7 +231,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="table-imgs"><img src="./imgs/side-table.png" alt="side-table.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/side-table.png" alt="side-table.png"></td>
                     <td>Round Table</td>
                     <td>#398302</td>
                     <td>NGN45,000</td>
@@ -216,7 +239,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/nova creamy sofa 1.png" alt="nova creamy sofa "></td>
+                    <td class="table-imgs-product"><img src="./imgs/nova creamy sofa 1.png" alt="nova creamy sofa "></td>
                     <td>Nova Creamy Sofa</td>
                     <td>#129542</td>
                     <td>NGN80,000</td>
@@ -224,7 +247,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt="bedroom-custom-beds 2.png"></td>
                     <td>Bed Frame</td>
                     <td>#805282</td>
                     <td>NGN100,000</td>
@@ -232,7 +255,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/accent-chair.png" alt="accent-chair.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/accent-chair.png" alt="accent-chair.png"></td>
                     <td>Accent Chair</td>
                     <td>#427223</td>
                     <td>NGN80,000</td>
@@ -240,7 +263,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/color-chair.png" alt="dinning-chair.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/color-chair.png" alt="dinning-chair.png"></td>
                     <td>Pashe Dinning Chair</td>
                     <td>#638732</td>
                     <td>NGN35,000</td>
@@ -248,7 +271,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/arm-chair.png" alt="arm-chair.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/arm-chair.png" alt="arm-chair.png"></td>
                     <td>Modern Arm Chair</td>
                     <td>#934823</td>
                     <td>NGN74,000</td>
@@ -256,7 +279,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/exe.chair.png" alt="accent-chair.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/exe.chair.png" alt="accent-chair.png"></td>
                     <td>Accent Chair</td>
                     <td>#756252</td>
                     <td>NGN90,000</td>
@@ -264,7 +287,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/sullivan-table.png" alt="accent-table.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/sullivan-table.png" alt="accent-table.png"></td>
                     <td>Sullivan Accent Table</td>
                     <td>#700634</td>
                     <td>NGN26,000</td>
@@ -272,7 +295,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/black-w-chair.png" alt="accent-chair.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/black-w-chair.png" alt="accent-chair.png"></td>
                     <td>Leather Dinning Chair</td>
                     <td>#504822</td>
                     <td>NGN25,000</td>
@@ -280,7 +303,7 @@
                     <td><img src="./imgs/ic_outline-delete.png" alt="outline-delete.png"></td>
                 </tr>
                 <tr>
-                    <td><img src="./imgs/coffee-table.png" alt="coffee-table.png"></td>
+                    <td class="table-imgs-product"><img src="./imgs/coffee-table.png" alt="coffee-table.png"></td>
                     <td>Square Oak Coffee Table</td>
                     <td>#490254</td>
                     <td>NGN25,000</td>
@@ -290,7 +313,7 @@
             </tbody>
 
         </table>
-    <!-- </div> -->
+    
     </main>
 </div>
 <div class="foot-img">

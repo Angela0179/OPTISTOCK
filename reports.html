@@ -87,7 +87,6 @@
              
             </div>
             <div class="best-selling-category overview-price02">
-                <!-- <table class="best-selling-cate-table1"> -->
                     <div class="caption-bsc">
                         <h3>Best selling category</h3>
                         <button class="view-all-btn1">See All</button>
@@ -117,7 +116,7 @@
         </div>
 
         <div class="profits-revenue">
-            <img src="./imgs/transfer-Chart.png" alt="transfer-Chart.png">
+            <img src="./imgs/transfer-Chart.png" alt="transfer-Chart.png" class="pro-rev-img">
         </div>
 
         <div class="best-selling">
@@ -176,10 +175,33 @@
     
     <!--codes for mobile screen-->
     <div class="mobile-container">
-        <header class="mobile-header">
-            <h3>Products</h3>
-            <i class="fa-solid fa-bars"></i>
+        <header class="mobile-header menu-icon">
+            <h3>Report</h3>
+            <i class="fa-solid fa-bars" id="bars"></i>
         </header>
+    
+        <div  class="menu-bar">
+            
+            <nav class="show" id="menu-links">
+              <img src="./imgs/logo-img.png" alt="logo-img.png" />
+              <ul>
+                <li><a href="dashboard.html"><img src="./imgs/Dashboard Layout.png"/>Dashboard</a></li>
+                <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png"/>Products</a></li>
+                <li><a href="category.html"><img src="./imgs/Categorize.png" alt="Categorize.png"/>Categories</a></li>
+                <li><a href="./pages/order.html"><img src="./imgs/Purchase Order.png"alt="Purchase Order.png"/>Orders</a> </li>
+                <li><a href="./pages/purchase.html"><img src="./imgs/Bill.png" alt="Bill.png" />Purchases</a></li>
+                <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png"alt="Fast Shipping.png"/>Transfer</a></li>
+                <li><a href="reports.html"><img src="./imgs/Graph Report.png"alt="Graph Report.png"/>Reports</a></li>
+                <li><a href="./pages/supplier.html" ><img src="./imgs/Supplier.png" alt="Supplier.png" />Supplies</a></li>
+                <li><a href="./pages/user.html"><img src="./imgs/Users.png" alt="/Users.png" />Users</a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+    
+                <hr>
+    
+                <li><a href="#"><img src="./imgs/Logout.png" />Logout</a></li>
+              </ul>
+            </nav>
+          </div>
         <main class="mobile-main">
             <div class="mobile-input">
                 <input type="text" placeholder="search" id="search" onclick="this.style.outline='1px solid #6943d8'" >

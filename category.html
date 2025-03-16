@@ -175,10 +175,33 @@
 
     <!--codes for my mobile screen-->
     <div class="mobile-container">
-        <header class="mobile-header">
+        <header class="mobile-header menu-icon">
             <h3>Categories</h3>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="bars"></i>
         </header>
+    
+        <div  class="menu-bar">
+            
+            <nav class="show" id="menu-links">
+              <img src="./imgs/logo-img.png" alt="logo-img.png" />
+              <ul>
+                <li><a href="dashboard.html"><img src="./imgs/Dashboard Layout.png"/>Dashboard</a></li>
+                <li><a href="products.html"><img src="./imgs/Shopping Cart.png" alt="Shopping Cart.png"/>Products</a></li>
+                <li><a href="category.html"><img src="./imgs/Categorize.png" alt="Categorize.png"/>Categories</a></li>
+                <li><a href="./pages/order.html"><img src="./imgs/Purchase Order.png"alt="Purchase Order.png"/>Orders</a> </li>
+                <li><a href="./pages/purchase.html"><img src="./imgs/Bill.png" alt="Bill.png" />Purchases</a></li>
+                <li><a href="transfer.html"><img src="./imgs/Fast Shipping.png"alt="Fast Shipping.png"/>Transfer</a></li>
+                <li><a href="reports.html"><img src="./imgs/Graph Report.png"alt="Graph Report.png"/>Reports</a></li>
+                <li><a href="./pages/supplier.html" ><img src="./imgs/Supplier.png" alt="Supplier.png" />Supplies</a></li>
+                <li><a href="./pages/user.html"><img src="./imgs/Users.png" alt="/Users.png" />Users</a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a></li>
+    
+                <hr>
+    
+                <li><a href="#"><img src="./imgs/Logout.png" />Logout</a></li>
+              </ul>
+            </nav>
+          </div>
 
         <main class="mobile-main">
             <div class="mobile-input">
@@ -190,7 +213,6 @@
                 <thead>
                     <tr>
                         <th>Categories</th>
-                        <th></th>
                         <th>Image</th>
                         <th>Rank</th>
                         <th>Status</th>
@@ -201,8 +223,7 @@
                 <tbody>
                     <tbody>
                         <tr>
-                            <td>Table</td>
-                            <td></td>
+                            <td class="category-mobile-td">Table</td>
                             <td><img src="./imgs/side-table.png" alt="/side-table.png"></td>
                             <td>1</td>
                             <td><p class="active-mobile">Active</p></td>
@@ -210,7 +231,6 @@
                         </tr>
                         <tr>
                             <td>Sofa</td>
-                            <td></td>
                             <td><img src="./imgs/nova creamy sofa 1.png" alt=""></td>
                             <td>2</td>
                             <td><p class="active-mobile">Active</p></td>
@@ -218,7 +238,6 @@
                         </tr>
                         <tr>
                             <td>Bed</td>
-                            <td></td>
                             <td><img src="./imgs/furniture-bedroom-custom-beds 2.png" alt=""></td>
                             <td>3</td>
                             <td><p class="active-mobile">Active</p></td>
@@ -226,7 +245,6 @@
                         </tr>
                         <tr>
                             <td>Chair</td>
-                            <td></td>
                             <td><img src="./imgs/accent-chair.png" alt="/accent-chair.png"></td>
                             <td>4</td>
                             <td><p class="inactive-mobile">Inactive</p></td>
@@ -234,7 +252,6 @@
                         </tr>
                         <tr>
                             <td>Chair</td>
-                            <td></td>
                             <td><img src="./imgs/color-chair.png" alt="color-chair.png"></td>
                             <td>5</td>
                             <td><p class="active-mobile">Active</p></td>
@@ -242,7 +259,6 @@
                         </tr>
                         <tr>
                             <td>Table</td>
-                            <td></td>
                             <td><img src="./imgs/arm-chair.png" alt="arm-chair.png"></td>
                             <td>6</td>
                             <td><p class="inactive-mobile">Inactive</p></td>
@@ -250,7 +266,6 @@
                         </tr>
                         <tr>
                             <td>Chair</td>
-                            <td></td>
                             <td><img src="./imgs/exe.chair.png" alt="exe.chair.png"></td>
                             <td>7</td>
                             <td ><p class="active-mobile">Active</p></td>
@@ -258,7 +273,6 @@
                         </tr>
                         <tr>
                             <td>Table</td>
-                            <td></td>
                             <td><img src="./imgs/sullivan-table.png" alt="sullivan-table.png"></td>
                             <td>8</td>
                             <td><p class="inactive-mobile">Inactive</p></td>
@@ -266,7 +280,6 @@
                         </tr>
                         <tr>
                             <td>Chair</td>
-                            <td></td>
                             <td><img src="./imgs/black-w-chair.png" alt="/black-w-chair.png"></td>
                             <td>9</td>
                             <td><p class="active-mobile">Active</p></td>
@@ -274,7 +287,6 @@
                         </tr>
                         <tr>
                             <td>Table</td>
-                            <td></td>
                             <td><img src="./imgs/coffee-table.png" alt="/coffee-table.png"></td>
                             <td>10</td>
                             <td><p class="active-mobile">Active</p></td>

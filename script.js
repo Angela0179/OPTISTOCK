@@ -1,10 +1,3 @@
-//js for a responsive menu links//
-document.querySelector(".menu-icon").addEventListener("click", function(){
-    const menuLinks = document.querySelector("#menu-links");
-    const icon = document.querySelector("#bars");
-    icon.classList.toggle("fa-xmark");
-    menuLinks.classList.add(".show")
-})
 
 //script for an active nav bar
 document.addEventListener("DOMContentLoaded", function(){
@@ -15,4 +8,14 @@ document.addEventListener("DOMContentLoaded", function(){
             item.classList.add("active")
         }
     })
+
+    //js for a responsive menu links//
+    document.querySelector(".menu-icon").addEventListener("click", function(){
+    const menuLinks = document.querySelector("#menu-links");
+    const icon = document.querySelector("#bars");
+    icon.classList.toggle("fa-bar");
+    menuLinks.classList.toggle("show");
+   
+})
+
 })
