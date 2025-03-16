@@ -201,9 +201,17 @@ aside {
   color: var(--txt-color);
   background-color: var(--ordered-color);
 }
-.welcome-nav img :hover {
+.sidebar-nav li img:hover {
   opacity: 1;
 }
+.sidebar-nav li img:active {
+  opacity: 1;
+}
+.sidebar-nav li:focus .menu-img {
+  opacity: 1;
+  width: 83%;
+}
+
 .welcome-nav a:active {
   color: var(--txt-color);
   background-color: var(--ordered-color);
